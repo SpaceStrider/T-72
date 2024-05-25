@@ -1,0 +1,25 @@
+MetaFileClass {
+ Name "{961C70F780818E59}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72a_tracks_flat_L_BCR.edds"
+ Configurations {
+  TIFFResourceClass PC {
+   MaxSize "1024"
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+   MaxSize "1024"
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+   MaxSize "1024"
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass PS4 : PC {
+   MaxSize "1024"
+   ColorSpace ToSRGB
+  }
+  TIFFResourceClass HEADLESS : PC {
+   MaxSize "1024"
+   ColorSpace ToSRGB
+  }
+ }
+}

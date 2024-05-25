@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C9C7C607A9C09342}Assets/Vehicles/Tracked/T-72A/Data/t72a_tracks_flat_L.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

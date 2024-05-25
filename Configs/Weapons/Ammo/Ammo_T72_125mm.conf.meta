@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{53853CBF6E969638}Configs/Weapons/Ammo/Ammo_T72_125mm.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

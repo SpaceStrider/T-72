@@ -1,0 +1,25 @@
+MetaFileClass {
+ Name "{E9E09B4199BFC692}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72a_hull_BCR.edds"
+ Configurations {
+  TGAResourceClass PC {
+   MaxSize "2048"
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass XBOX_ONE : PC {
+   MaxSize "2048"
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass XBOX_SERIES : PC {
+   MaxSize "2048"
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass PS4 : PC {
+   MaxSize "2048"
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass HEADLESS : PC {
+   MaxSize "2048"
+   ColorSpace ToSRGB
+  }
+ }
+}

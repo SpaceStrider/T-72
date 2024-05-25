@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{0B74979A1F83227E}Prefabs/Vehicles/Tracked/T-72B/T72B_Kontakt_Turret.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

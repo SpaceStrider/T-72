@@ -1,0 +1,8 @@
+GenericEntity : "{CDB5B3669F138E7E}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/T72B_Kontakt_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{E30C3E19B6186ED1}Assets/Vehicles/Tracked/T-72A/ERA/Kontakt_Turret_9.xob"
+  }
+ }
+}

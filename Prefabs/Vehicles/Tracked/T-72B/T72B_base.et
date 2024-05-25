@@ -1,0 +1,117 @@
+Tank : "{BC07885176C7FF8A}Prefabs/Vehicles/Tracked/T-72A/T72A_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Object "{96B5EB7CF2B494DE}Assets/Vehicles/Tracked/T-72A/t-72b_base.xob"
+  }
+  RigidBody "{51DAA09FECF52BBF}" {
+   Mass 31500
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#SPC-Vehicle_T72B_Name"
+    m_Image "{B26B9B44F574F2B4}UI/Textures/EditorPreviews/Vehicles/Tracked/T-72B/T72B_FIA.edds"
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 4600
+     }
+    }
+   }
+  }
+  VehiclePerceivableComponent "{566CD04B8A6107DD}" {
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{8FF753EA3E0E76AB}Prefabs/Vehicles/Tracked/T-72B/VehParts/Turret/T72B_Turret.et"
+    }
+    RegisteringComponentSlotInfo ERA {
+     Prefab "{19334BDA4050AA65}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_01.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo ERA_02 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{75677F3AFC94254B}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_02.et"
+    }
+    RegisteringComponentSlotInfo ERA_03 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{90FB33C3F071B220}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_03.et"
+    }
+    RegisteringComponentSlotInfo ERA_04 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{ADCF16FB851D3B17}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_04.et"
+    }
+    RegisteringComponentSlotInfo ERA_05 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{48535A0289F8AC7C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_05.et"
+    }
+    RegisteringComponentSlotInfo ERA_06 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{24076EE2353C2352}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_06.et"
+    }
+    RegisteringComponentSlotInfo ERA_07 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{C19B221B39D9B439}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_07.et"
+    }
+    RegisteringComponentSlotInfo ERA_08 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{5E6F2492DFE5313C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_08.et"
+    }
+    RegisteringComponentSlotInfo ERA_09 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{BBF3686BD300A657}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_09.et"
+    }
+    RegisteringComponentSlotInfo ERA_10 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{8BA56FABB817D27E}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_10.et"
+    }
+    RegisteringComponentSlotInfo ERA_11 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{6E392352B4F24515}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_11.et"
+    }
+    RegisteringComponentSlotInfo ERA_12 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{026D17B20836CA3B}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_12.et"
+    }
+    RegisteringComponentSlotInfo ERA_13 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{E7F15B4B04D35D50}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_13.et"
+    }
+    RegisteringComponentSlotInfo ERA_14 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{DAC57E7371BFD467}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_14.et"
+    }
+    RegisteringComponentSlotInfo ERA_15 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{3F59328A7D5A430C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_15.et"
+    }
+    RegisteringComponentSlotInfo ERA_16 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{530D066AC19ECC22}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_16.et"
+    }
+    RegisteringComponentSlotInfo ERA_17 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{B6914A93CD7B5B49}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_17.et"
+    }
+    RegisteringComponentSlotInfo ERA_18 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{29654C1A2B47DE4C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_18.et"
+    }
+    RegisteringComponentSlotInfo ERA_19 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{CCF900E327A24927}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_19.et"
+    }
+    RegisteringComponentSlotInfo ERA_20 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{12BBD632A5F0E3EE}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_20.et"
+    }
+    RegisteringComponentSlotInfo ERA_21 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{F7279ACBA9157485}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_21.et"
+    }
+    RegisteringComponentSlotInfo ERA_22 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{9B73AE2B15D1FBAB}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_22.et"
+    }
+    RegisteringComponentSlotInfo ERA_23 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{7EEFE2D219346CC0}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_23.et"
+    }
+    RegisteringComponentSlotInfo ERA_24 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{43DBC7EA6C58E5F7}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_24.et"
+    }
+    RegisteringComponentSlotInfo ERA_26 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{CA13BFF3DC79FDB2}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_26.et"
+    }
+    RegisteringComponentSlotInfo ERA_27 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{2F8FF30AD09C6AD9}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_27.et"
+    }
+    RegisteringComponentSlotInfo ERA_28 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+    }
+    RegisteringComponentSlotInfo ERA_25 : "{72B884EDCCB3A4EE}Prefabs/Vehicles/Tracked/T-72B/ERA_Hull.conf" {
+     Prefab "{A6478B1360BD729C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_25.et"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{70F87CA4CA089C3B}Assets/Vehicles/Tracked/T-72A/Data/Textures/Kontakt_base_BCR.edds"
+ NMOMap "{4820C736137FCEA5}Assets/Vehicles/Tracked/T-72A/Data/Textures/Kontakt_base_NMO.edds"
+}

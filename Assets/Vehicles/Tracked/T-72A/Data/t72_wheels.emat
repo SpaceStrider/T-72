@@ -1,0 +1,5 @@
+MatPBRBasic {
+ RoughnessScale 1.3
+ BCRMap "{32B47A15DEB8A096}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72_wheels_BCR.edds"
+ NMOMap "{0A6CC18707CFF208}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72_wheels_NMO.edds"
+}

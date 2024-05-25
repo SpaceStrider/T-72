@@ -1,0 +1,45 @@
+MetaFileClass {
+ Name "{9C4E5862E9314EE4}Assets/Vehicles/Tracked/T-72A/ERA/Kontakt_Turret_1.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6076CC94254C2FE4}" {
+     SourceMaterial "Kontakt_base"
+     AssignedMaterial "{E192E8A449A026FB}Assets/Vehicles/Tracked/T-72A/ERA/Data/Kontakt_base.emat"
+    }
+   }
+   MeshParams {
+    MeshParam KontaktTurret_01 {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_KontaktTurret_01 {
+     LayerPreset "FireView"
+     SurfaceProperties {
+      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{6076CC942717B4D5}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{6076CC942717B565}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{6076CC942717B58D}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{6076CC942717B5A0}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{6076CC942717B5BE}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

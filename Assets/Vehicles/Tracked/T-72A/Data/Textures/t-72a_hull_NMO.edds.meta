@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{D13820D340C8940C}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72a_hull_NMO.edds"
+ Configurations {
+  TGAResourceClass PC {
+   MaxSize "2048"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+   MaxSize "2048"
+  }
+  TGAResourceClass XBOX_SERIES : PC {
+   MaxSize "2048"
+  }
+  TGAResourceClass PS4 : PC {
+   MaxSize "2048"
+  }
+  TGAResourceClass HEADLESS : PC {
+   MaxSize "2048"
+  }
+ }
+}

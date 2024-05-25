@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{E164F772469605D8}Assets/Vehicles/Tracked/T-72A/Data/t72a_hull.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

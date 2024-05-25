@@ -1,0 +1,274 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{657D4C9A03F3474A}Assets/Vehicles/Tracked/T-72A/t-72b_placeholder.xob"
+   LODFactors {
+    1 1 1 1 1
+   }
+  }
+  SlotManagerComponent "{5E64113C4B53D56D}" {
+   Slots {
+    RegisteringComponentSlotInfo ERA_Turret_01 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.3214 0.5098 0.8166
+     Angles 0 90 -19.2377
+     Prefab "{3CD97928819E3999}Prefabs/Vehicles/Core/ERA/Kontakt_Base.et"
+    }
+    RegisteringComponentSlotInfo ERA_Turret_02 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+    }
+    RegisteringComponentSlotInfo ERA_Turret_03 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.379 0.244 1.0814
+     Angles 0 90 -73.85251
+    }
+    RegisteringComponentSlotInfo ERA_Turret_04 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.5269 0.2383 1.0613
+     Angles 3.803 76.63319 -74.404
+    }
+    RegisteringComponentSlotInfo ERA_Turret_05 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.7375 0.1174 0.9939
+     Angles -86.107 153.7883 173.28331
+    }
+    RegisteringComponentSlotInfo ERA_Turret_06 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.9765 0.1214 0.8099
+     Angles -86.1068 153.7883 161.12851
+    }
+    RegisteringComponentSlotInfo ERA_Turret_07 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.1546 0.1207 0.5808
+     Angles -86.62 104.9701 -164.4758
+    }
+    RegisteringComponentSlotInfo ERA_Turret_08 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.249 0.1197 0.2948
+     Angles -86.62009 104.9701 175.6906
+    }
+    RegisteringComponentSlotInfo ERA_Turret_09 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.2481 0.1238 0.0212
+     Angles -86.62 104.9701 153.4912
+    }
+    RegisteringComponentSlotInfo ERA_Turret_11 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.2112 0.2679 0.0327
+     Angles -72.3522 -106.24529 4.9796
+    }
+    RegisteringComponentSlotInfo ERA_Turret_12 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.1424 0.4155 0.0117
+     Angles -58.5238 -103.96329 4.1106
+    }
+    RegisteringComponentSlotInfo ERA_Turret_13 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.0219 0.5082 0.0362
+     Angles -29.4567 -101.19629 9.101
+    }
+    RegisteringComponentSlotInfo ERA_Turret_14 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.6616 0.3377 0.9592
+     Angles 1.2531 57.3902 -62.1986
+    }
+    RegisteringComponentSlotInfo ERA_Turret_15 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.7933 0.3343 0.8749
+     Angles -0.4163 52.1311 -62.3701
+    }
+    RegisteringComponentSlotInfo ERA_Turret_16 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.9248 0.3322 0.7638
+     Angles -1.2495 46.6426 -62.4187
+    }
+    RegisteringComponentSlotInfo ERA_Turret_17 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.0372 0.3387 0.6364
+     Angles 0.0911 32.7195 -62.1743
+    }
+    RegisteringComponentSlotInfo ERA_Turret_18 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.1065 0.3299 0.4956
+     Angles -1.7828 27.2883 -55.7826
+    }
+    RegisteringComponentSlotInfo ERA_Turret_19 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.166 0.329 0.3581
+     Angles 0.6016 11.6821 -58.4208
+    }
+    RegisteringComponentSlotInfo ERA_Turret_20 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -1.1944 0.3275 0.2208
+     Angles 2.1482 6.2192 -58.6252
+    }
+    RegisteringComponentSlotInfo ERA_Turret_21 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.6538 0.5149 0.6945
+     Angles 11.5282 91.4109 -11.6966
+    }
+    RegisteringComponentSlotInfo ERA_Turret_22 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.8097 0.5007 0.595
+     Angles 11.5282 91.4109 -8.0848
+    }
+    RegisteringComponentSlotInfo ERA_Turret_23 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.7853 0.5476 0.3145
+     Angles 11.5282 91.4109 -8.0848
+    }
+    RegisteringComponentSlotInfo ERA_Turret_24 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.9929 0.477 0.363
+     Angles 17.1526 104.1188 -1.9494
+    }
+    RegisteringComponentSlotInfo ERA_Turret_25 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.152 0.6083 0.5761
+     Angles 4.1062 88.9353 -14.549
+    }
+    RegisteringComponentSlotInfo ERA_Turret_26 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.0043 0.6144 0.5776
+     Angles 0.6475 89.8323 -12.1085
+    }
+    RegisteringComponentSlotInfo ERA_Turret_27 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.1406 0.6065 0.576
+     Angles -3.9831 90.81812 -14.1118
+    }
+    RegisteringComponentSlotInfo ERA_Turret_28 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.2877 0.6007 0.575
+     Angles -3.9831 90.81811 -13.8743
+    }
+    RegisteringComponentSlotInfo ERA_Turret_29 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.4381 0.5877 0.5723
+     Angles -6.6389 91.4784 -13.9354
+    }
+    RegisteringComponentSlotInfo ERA_Turret_30 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.237 0.6712 0.3043
+     Angles -3.9831 90.81813 -13.8743
+    }
+    RegisteringComponentSlotInfo ERA_Turret_31 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.0823 0.6721 0.3011
+     Angles -0.2395 90.0323 -11.8363
+    }
+    RegisteringComponentSlotInfo ERA_Turret_32 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.0679 0.6755 0.3017
+     Angles -0.2395 90.0323 -11.2842
+    }
+    RegisteringComponentSlotInfo ERA_Turret_33 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.2176 0.6685 0.3003
+     Angles 1.9552 89.59419 -11.2908
+    }
+    RegisteringComponentSlotInfo ERA_Turret_34 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.3853 0.6609 0.3023
+     Angles -6.0762 91.3381 -13.0615
+    }
+    RegisteringComponentSlotInfo ERA_Turret_35 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.5293 0.6396 0.3085
+     Angles -9.8413 92.22419 -13.1843
+    }
+    RegisteringComponentSlotInfo ERA_Turret_36 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.6767 0.6711 0.171
+     Angles -9.8413 92.22419 -26.987
+    }
+    RegisteringComponentSlotInfo ERA_Turret_37 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.818 0.6445 0.118
+     Angles -11.7941 99.5119 -33.8172
+    }
+    RegisteringComponentSlotInfo ERA_Turret_38 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.7288 0.5761 0.4288
+     Angles -8.5085 96.3522 -13.7489
+    }
+    RegisteringComponentSlotInfo ERA_Turret_39 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.5793 0.5731 0.5445
+     Angles -11.9619 92.5709 -12.98
+    }
+    RegisteringComponentSlotInfo ERA_Turret_40 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.5746 0.4921 0.8222
+     Angles -11.9619 92.5709 -20.3551
+    }
+    RegisteringComponentSlotInfo ERA_Turret_41 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.3572 0.5142 0.8553
+     Angles -5.959 90.33861 -23.1077
+    }
+    RegisteringComponentSlotInfo ERA_Turret_42 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.7335 0.5105 0.7124
+     Angles -11.9619 92.5709 -16.9626
+    }
+    RegisteringComponentSlotInfo ERA_Turret_43 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.8705 0.5511 0.3809
+     Angles -12.0264 98.47951 -14.6729
+    }
+    RegisteringComponentSlotInfo ERA_Turret_44 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.8707 0.4909 0.637
+     Angles -15.2113 95.5318 -14.0523
+    }
+    RegisteringComponentSlotInfo ERA_Turret_45 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.9607 0.6322 0.0176
+     Angles -16.8224 113.3999 -32.7806
+    }
+    RegisteringComponentSlotInfo ERA_Turret_46 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.0022 0.5246 0.2692
+     Angles -18.5528 104.0168 -14.1247
+    }
+    RegisteringComponentSlotInfo ERA_Turret_47 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.0211 0.4532 0.5412
+     Angles -36.3636 101.9625 -24.9098
+    }
+    RegisteringComponentSlotInfo ERA_Turret_48 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.6103 0.2957 1.0419
+     Angles 1.0293 102.66609 -67.3539
+    }
+    RegisteringComponentSlotInfo ERA_Turret_49 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.7471 0.3003 0.9607
+     Angles -3.1201 118.75999 -66.0278
+    }
+    RegisteringComponentSlotInfo ERA_Turret_50 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.8771 0.2869 0.8918
+     Angles -4.3056 121.5326 -64.76289
+    }
+    RegisteringComponentSlotInfo ERA_Turret_51 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.9821 0.2896 0.7827
+     Angles -4.3658 134.00259 -71.183
+    }
+    RegisteringComponentSlotInfo ERA_Turret_52 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.1002 0.255 0.6794
+     Angles -1.9204 138.21599 -86.6133
+    }
+    RegisteringComponentSlotInfo ERA_Turret_53 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.13 0.0566 0.6151
+     Angles -70.2188 -129.1102 -169.19731
+    }
+    RegisteringComponentSlotInfo ERA_Turret_54 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.9712 0.0635 0.8443
+     Angles -72.1548 -128.196 170.90829
+    }
+    RegisteringComponentSlotInfo ERA_Turret_56 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.7565 0.0826 1.0213
+     Angles -74.8988 -153.6864 177.8912
+    }
+    RegisteringComponentSlotInfo ERA_Turret_57 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.1835 0.1939 0.4841
+     Angles -87.48891 66.3668 1.3822
+    }
+    RegisteringComponentSlotInfo ERA_Turret_58 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.1425 0.3438 0.4661
+     Angles -75.88801 108.3712 -39.7465
+    }
+    RegisteringComponentSlotInfo ERA_Turret_59 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.1851 0.3751 0.1989
+     Angles -75.88801 108.3712 -18.6422
+    }
+    RegisteringComponentSlotInfo ERA_Turret_61 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.2373 0.2063 0.1916
+     Angles -75.88803 108.3712 -18.6422
+    }
+    RegisteringComponentSlotInfo ERA_Turret_62 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.2061 0.0596 0.3244
+     Angles -63.9889 -111.85961 -171.48419
+    }
+    RegisteringComponentSlotInfo ERA_Turret_63 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 1.0986 0.541 -0.0822
+     Angles -47.8648 115.6646 -20.0528
+    }
+    RegisteringComponentSlotInfo ERA_Turret_64 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.2119 0.731 0.0275
+     Angles 0.5615 94.38061 -10.9965
+    }
+    RegisteringComponentSlotInfo ERA_Turret_65 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset 0.0634 0.7332 0.0204
+     Angles -0.6317 88.24529 -11.9261
+    }
+    RegisteringComponentSlotInfo ERA_Turret_66 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.0879 0.7349 0.0157
+     Angles -0.1986 90.29409 -11.9409
+    }
+    RegisteringComponentSlotInfo ERA_Turret_67 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.2448 0.7237 0.014
+     Angles 4.3307 89.3345 -11.9755
+    }
+    RegisteringComponentSlotInfo ERA_Turret_68 : "{98C73CED89EF918B}Prefabs/Vehicles/Tracked/T-72B/ERA_Turret.conf" {
+     Offset -0.0136 0.7877 -0.2771
+     Angles 3.9397 89.3902 -8.0805
+    }
+   }
+  }
+ }
+}

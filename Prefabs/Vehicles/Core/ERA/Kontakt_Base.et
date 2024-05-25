@@ -1,0 +1,34 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  BaseTriggerComponent "{5E9ACCBFF26C5062}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5E9ACCBFFB4C405D}" {
+     EffectPrefab "{5DC37534B7C424D8}Prefabs/Weapons/Warheads/Warhead_ERA_Kontakt.et"
+     ParticleEffect "{B6275B6B9E29E9ED}Particles/Weapon/Explosion_RPG7V1.ptc"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+   }
+  }
+  MeshObject "{4B42E716914465B9}" {
+   Object "{A8BC19AA73CA4836}Assets/Vehicles/Tracked/T-72A/Kontakt-1.xob"
+  }
+  SCR_MineDamageManager "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_MineHitZone ERA {
+     ColliderNames {
+      "UTM_Kontakt"
+     }
+     HZDefault 1
+     DamageReduction 10
+     DamageThreshold 0
+     "Collision multiplier" 0.01
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0.01
+     "Fragmentation multiplier" 0
+     "Explosive multiplier" 0.005
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,30 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{657D4C9A03F3474A}Assets/Vehicles/Tracked/T-72A/t-72b_placeholder.xob"
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone ERA {
+     HZDefault 1
+     MaxHealth 50
+     DamageReduction 6
+     DamageThreshold 1
+     "Collision multiplier" 0
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0.01
+     "Fragmentation multiplier" 0
+     "Explosive multiplier" 0.005
+     "Incendiary multiplier" 2
+     m_pDestructionHandler SCR_DestructionBaseHandler "{5584D7FD19D422CB}" {
+      m_bDisablePhysicsAfterDestroyed 0
+     }
+     m_sDestructionSoundEvent "SOUND_EXPLOSION"
+     m_sDestructionParticle "{728768DE31C8D1DE}Particles/Weapon/Explosion_VOG25.ptc"
+     m_vParticleOffset 0 0 0
+    }
+   }
+  }
+ }
+}

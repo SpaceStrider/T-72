@@ -1,0 +1,83 @@
+Turret : "{101E2C485DFE3E79}Prefabs/Vehicles/Tracked/T-72A/VehParts/Turret/T72A_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Object "{B1B822C132BE622A}Assets/Vehicles/Tracked/T-72A/t-72b_turret.xob"
+  }
+  TurretComponent "{5E122300A616F812}" {
+   components {
+    SCR_2DSightsComponent "{5E122300A616F81C}" {
+     SightsFOVInfo SCR_SightsZoomFOVInfo "{5E122300A616F818}" {
+      m_fBaseZoom 5.5
+      m_fZoomMax 8
+      m_fStepZoomSize 2.5
+     }
+     m_fObjectiveFov 9
+    }
+   }
+   TurretSpeed 24 24
+   TurretAcceleration 24 24
+  }
+  SlotManagerComponent "{5E2AA018E907CBAA}" {
+   Slots {
+    RegisteringComponentSlotInfo ERA {
+     PivotID "v_turret_01"
+     MergePhysics 1
+     Prefab "{D294B0FA48167B51}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_01.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo ERA_02 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{BEC0841AF4D2F47F}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_02.et"
+    }
+    RegisteringComponentSlotInfo ERA_03 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{5B5CC8E3F8376314}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_03.et"
+    }
+    RegisteringComponentSlotInfo ERA_04 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{6668EDDB8D5BEA23}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_04.et"
+    }
+    RegisteringComponentSlotInfo ERA_05 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{83F4A12281BE7D48}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_05.et"
+    }
+    RegisteringComponentSlotInfo ERA_06 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{EFA095C23D7AF266}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_06.et"
+    }
+    RegisteringComponentSlotInfo ERA_07 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{0A3CD93B319F650D}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_07.et"
+    }
+    RegisteringComponentSlotInfo ERA_08 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{95C8DFB2D7A3E008}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_08.et"
+    }
+    RegisteringComponentSlotInfo ERA_09 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{7054934BDB467763}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_09.et"
+    }
+    RegisteringComponentSlotInfo ERA_10 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{4002948BB051034A}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_10.et"
+    }
+    RegisteringComponentSlotInfo ERA_11 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{A59ED872BCB49421}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_11.et"
+    }
+    RegisteringComponentSlotInfo ERA_12 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{C9CAEC9200701B0F}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_12.et"
+    }
+    RegisteringComponentSlotInfo ERA_13 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{2C56A06B0C958C64}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_13.et"
+    }
+    RegisteringComponentSlotInfo ERA_14 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{1162855379F90553}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_14.et"
+    }
+    RegisteringComponentSlotInfo ERA_15 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{F4FEC9AA751C9238}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_15.et"
+    }
+    RegisteringComponentSlotInfo ERA_16 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{98AAFD4AC9D81D16}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_16.et"
+    }
+    RegisteringComponentSlotInfo ERA_17 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{7D36B1B3C53D8A7D}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_17.et"
+    }
+    RegisteringComponentSlotInfo ERA_18 : "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf" {
+     Prefab "{E2C2B73A23010F78}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Turret/T72B_Kontakt_Turret_18.et"
+    }
+   }
+  }
+ }
+}

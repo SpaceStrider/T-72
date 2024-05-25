@@ -1,0 +1,8 @@
+GenericEntity : "{49FFE8F373F55961}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRack_Base.et" {
+ ID "5968D2B6A82C6019"
+ components {
+  MeshObject "{5968D9C73C08706E}" {
+   Object "{E684304AEF99FB07}Assets/Vehicles/Tracked/T-72A/AmmoRack.xob"
+  }
+ }
+}

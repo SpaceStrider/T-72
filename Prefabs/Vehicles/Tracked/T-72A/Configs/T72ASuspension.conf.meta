@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{8DE5F84424C46755}Prefabs/Vehicles/Tracked/M270/Configs/T72ASuspension.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

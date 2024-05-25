@@ -1,0 +1,202 @@
+MetaFileClass {
+ Name "{A0B66A513791BFA5}Assets/Vehicles/Tracked/T-72A/t-72a_dest.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{5E157C75EBF8B2B1}" {
+     SourceMaterial "t72_wheels"
+     AssignedMaterial "{C6041536A10FEF92}Assets/Vehicles/Tracked/T-72A/Data/t72a_hull_dest.emat"
+    }
+    MaterialAssignClass "{5E157C75EBF8B2C8}" {
+     SourceMaterial "t72a_hull_dest"
+     AssignedMaterial "{C6041536A10FEF92}Assets/Vehicles/Tracked/T-72A/Data/t72a_hull_dest.emat"
+    }
+   }
+   MeshParams {
+    MeshParam "arm_01.001" {
+    }
+    MeshParam "arm_02.001" {
+    }
+    MeshParam "arm_03.001" {
+    }
+    MeshParam "arm_04.001" {
+    }
+    MeshParam "arm_05.001" {
+    }
+    MeshParam "arm_06.001" {
+    }
+    MeshParam "arm_07.001" {
+    }
+    MeshParam "arm_08.001" {
+    }
+    MeshParam "arm_09.001" {
+    }
+    MeshParam "arm_10.001" {
+    }
+    MeshParam "arm_11.001" {
+    }
+    MeshParam "arm_12.001" {
+    }
+    MeshParam "crank_01.001" {
+    }
+    MeshParam "crank_02.001" {
+    }
+    MeshParam "shock_absorber_01.001" {
+    }
+    MeshParam "shock_absorber_02.001" {
+    }
+    MeshParam "shock_absorber_03.001" {
+    }
+    MeshParam "shock_absorber_04.001" {
+    }
+    MeshParam "shock_absorber_05.001" {
+    }
+    MeshParam "shock_absorber_06.001" {
+    }
+    MeshParam "t-72_hull_LOD0.001" {
+    }
+    MeshParam "wheel_drive_01.001" {
+    }
+    MeshParam "wheel_drive_02.001" {
+    }
+    MeshParam "wheel_idler_01.001" {
+    }
+    MeshParam "wheel_idler_02.001" {
+    }
+    MeshParam "wheel_road_01.001" {
+    }
+    MeshParam "wheel_road_02.001" {
+    }
+    MeshParam "wheel_road_03.001" {
+    }
+    MeshParam "wheel_road_04.001" {
+    }
+    MeshParam "wheel_road_05.001" {
+    }
+    MeshParam "wheel_road_06.001" {
+    }
+    MeshParam "wheel_road_07.001" {
+    }
+    MeshParam "wheel_road_08.001" {
+    }
+    MeshParam "wheel_road_09.001" {
+    }
+    MeshParam "wheel_road_10.001" {
+    }
+    MeshParam "wheel_road_11.001" {
+    }
+    MeshParam "wheel_road_12.001" {
+    }
+    MeshParam "wheel_roller_01.001" {
+    }
+    MeshParam "wheel_roller_02.001" {
+    }
+    MeshParam "wheel_roller_03.001" {
+    }
+    MeshParam "wheel_roller_04.001" {
+    }
+    MeshParam "wheel_roller_05.001" {
+    }
+    MeshParam "wheel_roller_06.001" {
+    }
+   }
+   GeometryParams {
+    GeometryParam "UBX_Engine_01.001" {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{0B9EB7B9C8DCC6A5}Common/Materials/Game/VehicleParts/engine.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UBX_Radiator_01.001" {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{BF7032579F3C450F}Common/Materials/Game/Metal/metal_1mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UBX_Transmission_01.001" {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{427C6C77966E41CB}Common/Materials/Game/VehicleParts/differential.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UCX_Hull.003" {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UCX_Hull.004" {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UCX_Hull.005" {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UCX_tracks_flat_left.001" {
+     LayerPreset "VehicleComplex"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UCX_tracks_flat_right.001" {
+     LayerPreset "VehicleComplex"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UTM_t-72_hull.001" {
+     LayerPreset "FireView"
+     SurfaceProperties {
+      "{1950188BB10D20EA}Common/Materials/Game/Metal/metal_5mm.gamemat"
+      "{A2A2935A5925F35F}Common/Materials/Game/Armor/armor_110mm.gamemat"
+      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm.gamemat"
+      "{8E8A10341B3BF250}Common/Materials/Game/Armor/armor_40mm.gamemat"
+      "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
+      "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{5E157C74EFED3B8A}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5E157C74EFED3434}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{5E157C74EFED344A}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{5E157C74EFED346D}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{5E157C74EFED347B}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

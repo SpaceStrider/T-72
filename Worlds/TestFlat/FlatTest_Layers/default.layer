@@ -1,0 +1,232 @@
+$grp GenericEntity : "{0A21DC21B1D23732}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Magazines/VehPart_BTR70_AmmoStorage_PKMT_KVPT.et" {
+ {
+  coords 41.529 1 104.938
+  {
+   GenericEntity {
+    ID "5EC4A118F3495174"
+    coords -1.109 1.353 1.233
+   }
+  }
+ }
+ {
+  coords 26.474 1 213.799
+ }
+ {
+  coords 12.561 1 199.259
+ }
+}
+Turret : "{101E2C485DFE3E79}Prefabs/Vehicles/Tracked/T-72A/VehParts/Turret/T72A_Turret.et" {
+ coords 29.041 1 205.158
+}
+Projectile : "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" {
+ coords 20.114 1 206.749
+}
+Vehicle BTR70_Base1 : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+ coords 44.468 1 123.445
+}
+GenericEntity : "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46_APFSDS_20rnd.et" {
+ coords 17.002 1 205.071
+}
+GenericEntity : "{279EDF225600C324}Prefabs/Weapons/HeavyWeapons/2A46/Cannon_2A46.et" {
+ coords 21.446 1 217.316
+}
+Projectile : "{32E12D322E107F1C}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM.et" {
+ coords 21.805 1.9 205.629
+}
+GenericEntity : "{3CD97928819E3999}Prefabs/Vehicles/Core/ERA/Kontakt_Base.et" {
+ coords 23.93 1 217.497
+}
+Vehicle Ural1 : "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et" {
+ coords 13.843 1 157.612
+}
+GenericEntity : "{48535A0289F8AC7C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_05.et" {
+ coords 26.464 1 216.067
+}
+GenericEntity : "{49FFE8F373F55961}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRack_Base.et" {
+ coords 15.164 1 206.684
+}
+Vehicle S1203_base1 : "{4AE9D080927D3CB9}Prefabs/Vehicles/Wheeled/S1203/S1203_base.et" {
+ coords 47.901 1 137.216
+}
+GenericEntity : "{4E27A2464DC43997}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRack_T72.et" {
+ coords 9.658 1 209.026
+}
+GenericEntity : "{4FD1A5A6670E015A}Prefabs/Weapons/MachineGuns/PKM/MG_PKMT.et" {
+ coords 17.757 2.586 215.442
+}
+Vehicle M151A2_M2HB_MERDC1 : "{5168FEA3054D6D15}Prefabs/Vehicles/Wheeled/M151A2/M151A2_M2HB_MERDC.et" {
+ coords 38.355 1 128.061
+}
+Vehicle S105_beige1 : "{54C3CC22DEBD57BE}Prefabs/Vehicles/Wheeled/S105/S105_beige.et" {
+ coords 51.522 1 135.753
+}
+GenericEntity : "{57BC8604B5314A0B}Prefabs/Weapons/Warheads/Explosions/Explosion_Tank_AmmoRack_Large_Secondary.et" {
+ coords 18.05 1 161.877
+}
+Turret : "{66596659FB0F645B}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Turret/BTR70_Turret.et" {
+ coords 24.605 1 204.292
+}
+Tank T72B_base1 : "{726286E1F9570EA1}Prefabs/Vehicles/Tracked/T-72B/T72B_base.et" {
+ coords 44.19 1 209.435
+}
+Projectile : "{7CC1697D08638B5C}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM_Spall.et" {
+ coords 21.011 1.9 205.665
+}
+GenericEntity : "{7D969E6B3209529C}Prefabs/Weapons/Warheads/Warhead_Grenade_HEDP_M433.et" {
+ coords 20.104 1 207.285
+}
+Turret : "{8C68C54F9C50A9AF}Prefabs/Vehicles/Wheeled/M998/VehParts/M1025_gun_mount.et" {
+ components {
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
+    PivotID "v_turret_01"
+    Offset 0 0.1736 0.6849
+   }
+  }
+ }
+ coords 34.225 1 140.031
+}
+GenericEntity : "{8F84F33B46DBA2CA}Prefabs/Weapons/Warheads/Explosions/Explosion_Tank_AmmoRack_Large.et" {
+ coords 11.101 1 141.945
+}
+Turret : "{8FF753EA3E0E76AB}Prefabs/Vehicles/Tracked/T-72B/VehParts/Turret/T72B_Turret.et" {
+ coords 52.909 1 209.964
+}
+$grp GenericEntity : "{986BBDD66E50B41F}Prefabs/Props/Core/Triplex_Placeholder.et" {
+ {
+  coords 17.842 1.121 177.578
+ }
+ {
+  coords 21.177 1 193.725
+ }
+}
+Vehicle M923A1 : "{9A0D72816DFFDB7F}Prefabs/Vehicles/Wheeled/M923A1/M923A1.et" {
+ components {
+  VehicleWheeledSimulation_SA "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Axles {
+     Axle "{4D8B26DF957A8E1C}" {
+      Suspension Suspension "{4D8B26DFF8859A7B}" {
+       SpringRate 50
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 54.107 1 124.432
+}
+$grp GenericEntity : "{9CEA10E8ABCFA5C3}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Magazines/VehPart_Magazine_KVPT.et" {
+ {
+  coords 23.946 1 214.66
+ }
+ {
+  coords 8.698 1 198.225
+ }
+}
+$grp Projectile : "{B77EA33FD42B994F}Prefabs/Weapons/Ammo/Ammo_APFSDS_3BM15_Spall.et" {
+ {
+  coords 35.035 1 221.339
+ }
+ {
+  coords 19.516 1.907 205.706
+ }
+}
+GenericEntity : "{B87DD4A6E9956F54}Prefabs/Vehicles/Tracked/T-72B/T72B_Kontakt_Hull.et" {
+ coords 69.468 1 210.837
+}
+StaticModelEntity : "{B94D11DD03097D5E}PrefabsEditable/Auto/Props/Military/Furniture/E_TableMilitary_US_01.et" {
+ coords 21.391 1 205.624
+}
+$grp GenericEntity : "{B9BB95A5F6594528}Prefabs/Weapons/Warheads/Warhead_Spall_3BM15.et" {
+ {
+  coords 33.925 1 222.084
+ }
+ {
+  coords 20.249 1.908 205.591
+ }
+}
+Tank T72A_base1 : "{BC07885176C7FF8A}Prefabs/Vehicles/Tracked/T-72A/T72A_base.et" {
+ coords 19.254 1 199.453
+}
+$grp Vehicle : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
+ BTR1 {
+  coords 44.027 1 115.408
+ }
+ BTR2 {
+  coords 38.525 1 198.644
+ }
+}
+Turret : "{C9D9D552BD146491}Prefabs/Vehicles/Tracked/T-72A/VehParts/CommanderTurret/T72A_Commander_Turret.et" {
+ coords 18.975 1 218.299
+}
+$grp GenericEntity : "{CC36340F826CAB2C}Prefabs/Weapons/HeavyWeapons/NSV/HMG_NSVT.et" {
+ {
+  coords 18.779 2.054 216.112
+ }
+ {
+  coords 22.672 1 218.139
+ }
+}
+GenericEntity : "{D649A52C2A1A29FF}Prefabs/Weapons/Warheads/Warhead_HEAT_PG7VM.et" {
+ coords 21.483 1.9 205.65
+}
+Tank T72B_FIA1 : "{D9EB40D7AD0966EC}Prefabs/Vehicles/Tracked/T-72B/T72B_FIA.et" {
+ coords 35.642 1 206.403
+ angleY -179.192
+}
+GenericEntity : "{E4367156CB0D8ECE}Prefabs/Weapons/HeavyWeapons/NSV/HMG_NSV.et" {
+ coords 15.021 2.154 216.171
+}
+GenericEntity : "{E57DBDA5C50F07FF}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_carbine_4x20.et" {
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     MagazineTemplate "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46_APFSDS_20rnd.et"
+    }
+   }
+  }
+ }
+ coords 18.837 1.906 205.726
+ angleZ 0
+}
+$grp Projectile : "{E6EC1F21E22709F0}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM_Penetrator.et" {
+ {
+  coords 35.043 1 222.274
+ }
+ {
+  coords 20.92 1.9 205.874
+ }
+}
+$grp Projectile : "{EDC9C1FB7F55A32D}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433_Spall.et" {
+ {
+  coords 17.628 1 205.571
+ }
+ {
+  coords 20.101 1 207.926
+ }
+}
+TracerProjectile : "{F13841C887A6E200}Prefabs/Weapons/Ammo/Ammo_125mm_HE_3OF26.et" {
+ coords 34.323 1 221.339
+}
+$grp TracerProjectile : "{F14086F5170D1457}Prefabs/Weapons/Ammo/Ammo_125mm_APFSDS_3BM15.et" {
+ {
+  components {
+   ShellMoveComponent "{851AA4A2AE0A5691}" {
+    SonicCracks "{911B8A52417F1E62}Sounds/Weapons/_SharedData/BulletSonicCracks/HMG/Weapons_BulletSonicCracks_100mm.acp"
+    SubsonicFlybys "{FD5AFE7E151777B2}Sounds/Weapons/_SharedData/BulletFlybys/HMG/Weapons_BulletFlybys_100mm.acp"
+   }
+  }
+  coords 33.954 1 221.339
+ }
+ {
+  coords 19.823 1.949 205.613
+ }
+}
+Vehicle M151A1 : "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et" {
+ coords 49.555 1 124.228
+}
+StaticModelEntity : "{F700A2DDB53A5D31}PrefabsEditable/Auto/Compositions/Misc/SubCompositions/E_Table_Desk_US_01.et" {
+ coords 19.511 1 205.681
+}

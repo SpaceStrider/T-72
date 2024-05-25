@@ -1,0 +1,4 @@
+MatPBRBasic : "{E164F772469605D8}Assets/Vehicles/Tracked/T-72A/Data/t72a_hull.emat" {
+ RoughnessScale 1.4
+ BCRMap "{F8D7F8AA8BA835F4}Assets/Vehicles/Tracked/T-72A/Data/Textures/FIA/t-72a_hull_BCR.edds"
+}

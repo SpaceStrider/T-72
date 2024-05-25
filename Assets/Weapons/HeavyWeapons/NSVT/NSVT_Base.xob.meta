@@ -1,0 +1,45 @@
+MetaFileClass {
+ Name "{A4858C5EAF5DC2CF}Assets/Weapons/HeavyWeapons/NSVT/NSVT_Base.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{5E2AA9C199331D2B}" {
+     SourceMaterial "t72a_turret"
+     AssignedMaterial "{2BC072A311C9C4FB}Assets/Vehicles/Tracked/T-72A/Data/t72a_turret.emat"
+    }
+   }
+   MeshParams {
+    MeshParam turret_machinegun {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_turret_machinegun {
+     LayerPreset "WeaponFire"
+     SurfaceProperties {
+      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{5E2AA9C18A0C9F27}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5E2AA9C18A0C9FF5}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{5E2AA9C18A0C9845}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{5E2AA9C18A0C9877}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{5E2AA9C18A0C98A6}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

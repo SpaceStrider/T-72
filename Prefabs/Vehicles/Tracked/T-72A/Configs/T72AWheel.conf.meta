@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{01A271682FE559F5}Prefabs/Vehicles/Tracked/M270/Configs/T72AWheel.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

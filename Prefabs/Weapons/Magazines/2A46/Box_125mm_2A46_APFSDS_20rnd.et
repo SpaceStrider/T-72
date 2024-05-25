@@ -1,0 +1,53 @@
+GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   Priority 25
+   PriorityAgainstVehicles 100
+   UsedAgainst 12
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "2A46 APFSDS"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5E1425A24D492A5C}" {
+     Weight 5
+    }
+    m_Size SLOT_2x2
+   }
+   WeightPerAmmo 3
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWell2A46 "{5E1425A24D492A6C}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "2A46 3BM15 APFSDS"
+    Description ""
+    m_sAmmoCaliber "125mm"
+    m_sAmmoType "APFSDS"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags 6
+   }
+   ItemModel "{EB0A22FF818604FF}Assets/Props/Military/MilitaryCrates/CrateStack_01/Dst/CrateStack_01_dst_3.xob"
+   MaxAmmo 20
+   AmmoConfig "{53853CBF6E969638}Configs/Weapons/Ammo/Ammo_T72_125mm.conf"
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{2482E01261AB2FB5}Assets/Weapons/Magazines/PM/Magazine_8rnd_PM.xob"
+  }
+  RigidBody "{571B0382401B1385}" {
+   Mass 40
+  }
+  ActionsManagerComponent "{F092E6B0537754FD}" {
+   additionalActions {
+    SCR_AttachItemFromInventoryAction "{5A1E58F7D9256374}" {
+     ParentContextList {
+      "Commander_Idle"
+     }
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+ }
+}

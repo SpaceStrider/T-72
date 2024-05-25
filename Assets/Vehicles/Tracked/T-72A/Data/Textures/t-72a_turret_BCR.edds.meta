@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{378675BF8A131411}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72a_turret_BCR.edds"
+ Configurations {
+  TGAResourceClass PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass XBOX_ONE : PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass XBOX_SERIES : PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass PS4 : PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass HEADLESS : PC {
+   ColorSpace ToSRGB
+  }
+ }
+}

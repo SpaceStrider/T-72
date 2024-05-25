@@ -1,0 +1,84 @@
+GameProject {
+ ID "T72A"
+ GUID "5E0AB16BEB16D6A4"
+ TITLE "T-72A"
+ Dependencies {
+  "58D0FB3206B6F859" "5E389BB9F58B79A6"
+ }
+ Configurations {
+  GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E02}" {
+    StringTables {
+     StringTableDefinition "{60F284C35879954C}" {
+      StringTableSource "{57C0A2A0FAA052D4}Language/T72_Localization.st"
+      Languages {
+       LanguageDefinition "{60F284C35E6C0D00}" {
+        Code "cs_cz"
+        StringTableRuntime "{77B5C3BD90648E73}Language/T72_Localization.cs_cz.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D3C}" {
+        Code "de_de"
+        StringTableRuntime "{A2CBD98E83C79F53}Language/T72_Localization.de_de.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D4C}" {
+        Code "en_us"
+        StringTableRuntime "{FC3B53C5E9349A52}Language/T72_Localization.en_us.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D51}" {
+        Code "es_es"
+        StringTableRuntime "{39771E4C0736F14D}Language/T72_Localization.es_es.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D64}" {
+        Code "fr_fr"
+        StringTableRuntime "{82DFEB7BE1B5124F}Language/T72_Localization.fr_fr.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D71}" {
+        Code "it_it"
+        StringTableRuntime "{02C3644F4C9791B6}Language/T72_Localization.it_it.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D7A}" {
+        Code "ja_jp"
+        StringTableRuntime "{12D8D9DD72E6A11D}Language/T72_Localization.ja_jp.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D8F}" {
+        Code "ko_kr"
+        StringTableRuntime "{B266F171E1CBA222}Language/T72_Localization.ko_kr.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0D98}" {
+        Code "pl_pl"
+        StringTableRuntime "{EE17578B5F243E5E}Language/T72_Localization.pl_pl.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0DAD}" {
+        Code "pt_br"
+        StringTableRuntime "{3B60CD4764DAF4E4}Language/T72_Localization.pt_br.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0DBB}" {
+        Code "ru_ru"
+        StringTableRuntime "{6E21D9EFF9A39192}Language/T72_Localization.ru_ru.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0F10}" {
+        Code "uk_ua"
+        StringTableRuntime "{E4798C19958D2FC7}Language/T72_Localization.uk_ua.conf"
+       }
+       LanguageDefinition "{60F284C35E6C0F24}" {
+        Code "zh_cn"
+        StringTableRuntime "{3EC9E224AC2DFFDA}Language/T72_Localization.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 : PC {
+   PlatformHardware PS5
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

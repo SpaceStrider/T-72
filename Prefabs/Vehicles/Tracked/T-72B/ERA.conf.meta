@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{14C3A92F184CFAE2}Prefabs/Vehicles/Tracked/T-72B/ERA.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

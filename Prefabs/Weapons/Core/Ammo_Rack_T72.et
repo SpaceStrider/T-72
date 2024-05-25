@@ -1,0 +1,16 @@
+GenericEntity : "{B40E1014F2338B3C}Prefabs/Weapons/Core/Ammo_Rack_base.et" {
+ ID "5968D2B6A82C6019"
+ components {
+  BaseTriggerComponent "{60FA6425914C5AE4}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{60FA6424B8554FF2}" {
+     EffectPrefab "{BCE4E0823FCFBCB7}Prefabs/Weapons/Warheads/Explosions/Explosion_AmmoRack_Large.et"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+   }
+  }
+  MeshObject "{5968D9C73C08706E}" {
+   Object "{E684304AEF99FB07}Assets/Vehicles/Tracked/T-72A/AmmoRack.xob"
+  }
+ }
+}

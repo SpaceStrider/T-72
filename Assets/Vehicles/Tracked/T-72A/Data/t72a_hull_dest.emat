@@ -1,0 +1,21 @@
+MatPBRMulti {
+ GlobalMCRMap "{E9E09B4199BFC692}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72a_hull_BCR.edds"
+ OverlayBlackPower 0.538
+ MaskMap "{8EEA5379E804F881}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_exterior_GLOBAL_MASK.edds"
+ VFXMap "{046E4EDDAB606043}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_exterior_VFX.edds"
+ GlobalNMOMap "{D13820D340C8940C}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72a_hull_NMO.edds"
+ Enabled_2 1
+ Color_2 0 0 0 1
+ BCR_2 "{BB440784A103CB06}Assets/_SharedData/Metal/ST_MetalPaint_Coated_1m_BCR.edds"
+ NMO_2 "{839CBC1678749998}Assets/_SharedData/Metal/ST_MetalPaint_Coated_1m_NMO.edds"
+ Mask_2 "{A585D759C4C68372}Assets/_SharedData/DetailMask/ST_Rust_02_Mask1.edds"
+ Roughness_2 2.142
+ Color_1 0.733 0.733 0.733 1
+ BCR_1 "{9B97AA81EF1AAA3C}Assets/_SharedData/Dirt/ST_destruct_rust_BCR.edds"
+ NMO_1 "{EED041FE9CB208F1}Assets/_SharedData/Dirt/ST_Dirt02_NMO.edds"
+ UVTransform_1 MatUVTransform "{5E157C742C08F466}" {
+  TilingU 10
+  TilingV 10
+ }
+ DetNormal_1 2
+}

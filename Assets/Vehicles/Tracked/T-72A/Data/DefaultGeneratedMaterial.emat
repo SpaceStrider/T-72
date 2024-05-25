@@ -1,0 +1,4 @@
+MatPBRBasic {
+ AlphaTest 0.171
+ AlphaMul 0
+}

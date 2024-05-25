@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{AFCE950C503A492A}Sounds/Vehicles/Wheeled/BTR70/Vehicles_T72_Rain.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

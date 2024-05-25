@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{70FF3E1E08BF76F4}Assets/Weapons/HeavyWeapons/NSVT/Data/t72a_turret.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

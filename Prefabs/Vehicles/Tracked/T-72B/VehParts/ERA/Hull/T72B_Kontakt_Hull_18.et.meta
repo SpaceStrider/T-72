@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{29654C1A2B47DE4C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/T72B_Kontakt_Hull_18.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

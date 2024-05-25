@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{AEC4CB6559F6DCC7}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72a_tracks_flat_L_NMO.edds"
+ Configurations {
+  TIFFResourceClass PC {
+   MaxSize "1024"
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+   MaxSize "1024"
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+   MaxSize "1024"
+  }
+  TIFFResourceClass PS4 : PC {
+   MaxSize "1024"
+  }
+  TIFFResourceClass HEADLESS : PC {
+   MaxSize "1024"
+  }
+ }
+}

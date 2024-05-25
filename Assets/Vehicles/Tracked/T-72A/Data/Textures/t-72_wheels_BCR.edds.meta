@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{32B47A15DEB8A096}Assets/Vehicles/Tracked/T-72A/Data/Textures/t-72_wheels_BCR.edds"
+ Configurations {
+  TGAResourceClass PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass XBOX_ONE : PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass XBOX_SERIES : PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass PS4 : PC {
+   ColorSpace ToSRGB
+  }
+  TGAResourceClass HEADLESS : PC {
+   ColorSpace ToSRGB
+  }
+ }
+}

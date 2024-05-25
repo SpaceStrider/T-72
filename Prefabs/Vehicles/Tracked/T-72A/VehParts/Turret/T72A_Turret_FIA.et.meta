@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DD676DD48265BD15}Prefabs/Vehicles/Tracked/T-72A/VehParts/Turret/T72A_Turret_FIA.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
