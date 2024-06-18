@@ -4,14 +4,6 @@ GenericEntity : "{E4367156CB0D8ECE}Prefabs/Weapons/HeavyWeapons/NSV/HMG_NSV.et" 
   RigidBody "{5EB268B9C3816D1A}" {
    SimState Collision
    Static 0
-   Kinematic 1
-  }
-  SlotManagerComponent "{6044A1932A368344}" {
-   Slots {
-    EntitySlotInfo Dovetail {
-     Enabled 0
-    }
-   }
   }
  }
 }

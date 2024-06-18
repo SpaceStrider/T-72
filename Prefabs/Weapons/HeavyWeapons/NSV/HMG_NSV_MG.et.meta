@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{CC36340F826CAB2C}Prefabs/Weapons/HeavyWeapons/NSV/HMG_NSVT.et"
+ Name "{346C5A0AAC75A6CA}Prefabs/Weapons/HeavyWeapons/NSV/HMG_NSV_MG.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
