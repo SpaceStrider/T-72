@@ -56,6 +56,8 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
+    SightsComponent "{BB23A637957CFFF8}" {
+    }
     MuzzleComponent "{5E1425A1AA3199A6}" {
      components {
       CaseEjectingEffectComponent "{5E1425A1AA3199AC}" {
@@ -128,11 +130,6 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
        "Angular Inertia Decay Speed" 12
        DamageToSway 2
        OneHandMultiplier 2
-       ObstructionChangeSpeed 5
-       IkObstructionAngularScale 0.01
-       IkObstructionLinearScale 0.01
-       IkObstructionLinearOffset 0 1 0
-       IkObstructionAngularOffset 0 0 0
       }
       OnHitAimModifier "{5E1425A1AA3199BE}" {
        IsEnabled 0
@@ -197,35 +194,32 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
      }
      ReloadDuration 7
      MagazinePosition InventoryStorageSlot Mag {
-      Offset 0 -0.3632 -2.4991
+      Offset -0.3583 0.0384 -0.0656
      }
      MagazineTemplate "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46_APFSDS_20rnd.et"
     }
-    WeaponAnimationComponent "{60562B3502676593}" {
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
      AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
      AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
      AlwaysActive 1
-     AnimInjection AnimationAttachmentInfo "{60562B350F7FF27F}" {
+     AnimInjection AnimationAttachmentInfo "{6174387BAA3BD340}" {
       AnimGraph "{6791BE2144ADC6A3}Assets/Weapons/HeavyWeapons/workspaces/M2HB_m998.agr"
       AnimInstance "{90F5E30119FE8312}Assets/Weapons/HeavyWeapons/workspaces/M2HB_Player_tripod.asi"
       BindingName "Weapon"
      }
      BindWithInjection 1
      AnimCommandsToBind {
-      "" ""
+      "" "" ""
      }
      AutoVariablesBind 1
      AnimVariablesToBind {
-      ""
+      "" ""
      }
     }
    }
    WeaponType Rifle
-   IkObstructionEnabled 1
    obstructionTestCharacterOffset 0 0 0
    obstructionTestAddedLength 0
-   obstructionTestBreakingThreshold 0.7
-   ObstructionAlphaThreshold 1
    SoundInt 1030000
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
     Name "2A46"
