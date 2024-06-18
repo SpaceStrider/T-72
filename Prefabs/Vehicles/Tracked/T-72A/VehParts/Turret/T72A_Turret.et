@@ -239,6 +239,12 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     PivotID "v_gun_01"
     Offset -0.47 0.32 -0.3
    }
+   TurretSpeed 20 20
+   TurretAcceleration 20 20
+   TurretDeceleration 40 40
+   BaseSpeed 20
+   BaseAcceleration 20
+   BaseDeceleration 40
   }
   SlotManagerComponent "{5E2AA018E907CBAA}" {
    Slots {
