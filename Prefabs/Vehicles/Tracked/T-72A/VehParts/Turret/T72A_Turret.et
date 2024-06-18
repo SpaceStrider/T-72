@@ -2,6 +2,11 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
  ID "51ACD0965653D003"
  components {
   TurretControllerComponent "{51ACD09C61C183E4}" {
+   components {
+    AITurretAimingComponent "{5549077A3C06B25E}" {
+     AimingPID 4 0 0
+    }
+   }
    CanAimOnlyInADS 1
    LimitsHoriz -180 180
    LimitsVert -6 13
@@ -96,40 +101,33 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
        ParentContextList {
-        "gunner" "door_l01" "door_r01"
+        "gunner"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "gunnerHatch"
        }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       PivotID "v_gunner_idle"
      }
-     SeatType 0
+     SkipCharacterDoorAnimationsFromSeat 1
      DoorInfoList {
-      CompartmentDoorInfo "{50B917CA9C90BD91}" {
-       ContextName "door_l01"
-       EntryPositionInfo PointInfo "{50B917CA96E757AA}" {
-        PivotID "driver_getin"
-       }
-       ExitPositionInfo PointInfo "{5E122300A616F800}" {
-        PivotID "driver_getout"
-        Offset -0.5746 2.2429 -0.9013
-       }
-       GetOutTeleport 1
-       SeatPositionAligning 0
-      }
+      1
      }
      UIInfo UIInfo "{50870A10DCCDED83}" {
-      Name "#AR-VehiclePosition_Gunner"
-     }
-     AccessibilitySettings CompartmentAccessibilityContext "{5956EED3CC9A2F3E}" : "{E778E709DFC79857}Prefabs/Vehicles/Wheeled/BTR70/CompartmentAccess_BTR70.conf" {
      }
      BaseCoverage 1
-     CanOccupantEquipGadget 1
-     RestrictedItemTypes +{
-     }
-     m_DefaultOccupantData SCR_DefaultOccupantData "{5E122300A616F814}" {
+     SidestepRayZOffset 0
+     m_DefaultOccupantData SCR_DefaultOccupantData "{59BA9CCCB82D651B}" {
       m_sDefaultOccupantPrefab "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
      }
+     m_fFreelookAimLimitOverrideLeft -160
+     m_fFreelookAimLimitOverrideRight 160
+     m_vFreelookCameraNeckOffsetScale -1 0.5 0.8
+     m_fFreelookCameraNeckFollowTraverse 0
     }
    }
   }
@@ -214,7 +212,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      ADSTime 0
      CameraRecoilAmount 0
-     m_sLayoutResource "{4CE66FA8219D33D7}UI/layouts/Sights/Optic_Default.layout"
      m_sReticleTexture "{1EA73EE5DB2E9B98}UI/Textures/Sights/T72/T72-white_UI.edds"
      m_sReticleGlowTexture "{1EA73EE5DB2E9B98}UI/Textures/Sights/T72/T72-white_UI.edds"
      m_bHasIllumination 1
@@ -223,7 +220,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fMagnification 8
      m_fReticleAngularSize 3
      m_fReticleBaseZoom 8
-     m_bIsTurretOptic 1
      m_fObjectiveFov 9
      m_fObjectiveScale 0.7
      m_fVignetteScale 0.8
@@ -243,12 +239,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     PivotID "v_gun_01"
     Offset -0.47 0.32 -0.3
    }
-   TurretSpeed 15 6
-   TurretAcceleration 15 6
-   TurretDeceleration 30 12
-   BaseSpeed 15
-   BaseAcceleration 15
-   BaseDeceleration 30
   }
   SlotManagerComponent "{5E2AA018E907CBAA}" {
    Slots {
@@ -295,6 +285,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
     PivotID "v_gun_01"
     Offset 0.339 -0.159 -0.6019
+    MergePhysics 1
    }
    WeaponTemplate "{4FD1A5A6670E015A}Prefabs/Weapons/MachineGuns/PKM/MG_PKMT.et"
    WeaponSlotIndex 1
@@ -346,7 +337,14 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
     BindingName "Vehicle"
    }
+   AnimCommandsToBind {
+    "" ""
+   }
    AutoVariablesBind 1
+   AnimVariablesToBind {
+    "" ""
+   }
+   DeactivationDelay 2
   }
  }
 }

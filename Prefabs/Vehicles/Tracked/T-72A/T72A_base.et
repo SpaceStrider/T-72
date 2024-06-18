@@ -104,7 +104,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   BaseVehicleNodeComponent "{20FB66C5B2237133}" {
    components {
-    SCR_CarControllerComponent_SA "{20FB66C5BC92275B}" {
+    SCR_CarControllerComponent "{20FB66C5BC92275B}" {
      MaxStartupTime 2.4
      MaxWantsToStartTime 2
      AirIntakes {
@@ -198,41 +198,47 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     PilotCompartmentSlot PilotCompartment {
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
       ParentContextList {
-       "door_L01"
+       "driver_hatch"
       }
+     }
+     GetOutAction SCR_GetOutAction "{509D56667AFC4BD5}" {
+      VisibilityRange 5
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D56667885A8DC}" {
       ParentContextList {
-       "driver_idle"
+       "driver"
       }
+      VisibilityRange 5
      }
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D528254D8CE5491}" {
        ParentContextList {
-        "driver_idle" "door_L01"
+        "driver"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E93B44D65}" {
+       ParentContextList {
+        "driver_hatch"
        }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{A1CB25848A3D93A8}" {
       PivotID "v_driver_idle"
      }
+     SkipCharacterDoorAnimationsFromSeat 1
      DoorInfoList {
-      CompartmentDoorInfo "{50B8D5DDA17EB35D}" {
-       ContextName "Door_L01"
-       EntryPositionInfo PointInfo "{5E38B925DD33F66C}" {
-        Offset -2.225 0 2.4169
-        Angles 0 90 0
-       }
-       ExitPositionInfo PointInfo "{5E38B925DD33F66B}" {
-        Offset 0 1.4475 1.1422
-       }
-       GetOutTeleport 1
-      }
+      0
      }
-     AccessibilitySettings CompartmentAccessibilityContext "{5E9C3D51D115B794}" {
+     UIInfo UIInfo "{50870A1DC44BA836}" {
      }
      BaseCoverage 1
      m_bIsWaterTight 1
+     m_DefaultOccupantData SCR_DefaultOccupantData "{59BA9CCC9085FC38}" {
+      m_sDefaultOccupantPrefab "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+     }
+     m_fFreelookAimLimitOverrideLeft -160
+     m_fFreelookAimLimitOverrideRight 160
+     m_fFreelookCameraNeckFollowTraverse 1
     }
    }
   }
@@ -332,7 +338,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    MultiSlots {
     MultiSlotConfiguration "{5E38B925DD33F658}" {
      SlotTemplate InventoryStorageSlot Bandage {
-      Prefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_USSR_01.et"
+      Prefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et"
      }
      NumSlots 2
     }
@@ -447,7 +453,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    m_fVehicleDamageSpeedThreshold 25
    m_fVehicleSpeedDestroy 140
   }
-  VehicleWheeledSimulation_SA "{731B26FCA2F19855}" {
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
    SignalsSourceAccess SignalsSourceAccessClass "{5E38B925DD330404}" {
    }
    Simulation Wheeled "{5E38B925DD330407}" {
@@ -923,6 +929,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      Offset -0.02 1.2674 1.403
      MergePhysics 1
      Prefab "{986BBDD66E50B41F}Prefabs/Props/Core/Triplex_Placeholder.et"
+     RegisterActions 1
      m_CameraPointInfo RAM_CustomCameraPointInfo "{610E489C3D1CDC86}" {
       Offset -0.02 1.3322 1.421
       m_fCameraFoV 90
@@ -946,35 +953,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      }
     }
     UserActionContext "{5E38B925DD0EEABF}" {
-     ContextName "driver_idle"
+     ContextName "driver"
      Position PointInfo "{5E38B925DD0ED211}" {
       PivotID "v_driver_idle"
      }
     }
-    UserActionContext "{5E38B925DD0ED210}" {
-     ContextName "gunner_idle"
-     Position PointInfo "{5E38B925DD0ED213}" {
-      PivotID "v_gunner_idle"
-     }
-    }
-    UserActionContext "{5E38B925DD0ED212}" {
-     ContextName "passenger_idle"
-     Position PointInfo "{5E38B925DD0E2ADE}" {
-      PivotID "v_passenger_idle"
-     }
-    }
     UserActionContext "{5E38B925DD0E2AD9}" {
-     ContextName "door_L01"
+     ContextName "driver_hatch"
      Position PointInfo "{5E38B925DD0E2AD8}" {
       PivotID "v_door_L01"
       Offset 0 1.4033 1.14
-     }
-    }
-    UserActionContext "{5E38B925DD0E2ADB}" {
-     ContextName "door_R01"
-     Position PointInfo "{5E38B925DD0E578B}" {
-      PivotID "v_door_R01"
-      Offset 0 0.1 -0.7
      }
     }
     UserActionContext "{5E38B925DD0E578A}" {
@@ -991,8 +979,31 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Angles 0 180 0
      }
     }
+    UserActionContext "{617471621CDFFD3F}" {
+     UIInfo SCR_ActionContextUIInfo "{6132AA900B4B9AA5}" {
+     }
+     ContextName "push_front"
+     Position PointInfo "{60DABEEBDA740DE8}" {
+      Offset 0 0.9 2.6
+     }
+     Height 0
+    }
+    UserActionContext "{61747161E390CDF4}" {
+     UIInfo SCR_ActionContextUIInfo "{6132AA900B4B9AA5}" {
+     }
+     ContextName "push_rear"
+     Position PointInfo "{60DABEEBDA740DE8}" {
+      Offset 0 1 -3.75
+     }
+     Height 0
+    }
    }
    additionalActions {
+    SCR_PushVehicleAction "{60DA85DB5FFC6E4F}" {
+     ParentContextList {
+      "push_front" "push_rear"
+     }
+    }
     SCR_EngineAction "{5E067791F383D2CC}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {
     }
     SCR_EngineAction "{5E067791F2FBD8E6}" : "{B67160046438840C}Prefabs/Vehicles/Core/Configs/Actions/EngineOffAction.conf" {
@@ -1001,16 +1012,20 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    AllowCrossHierarchy 1
   }
   VehicleAnimationComponent "{50B803EAA459B0AF}" {
-   AnimGraph "{66618A6A119CAD93}Assets/Vehicles/Wheeled/workspaces/Vehicles_Wheeled_Graph.agr"
-   AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
+   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
+   AnimInstance "{F2DBB12250B5F75A}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_vehicle.asi"
+   StartNode "VehicleMasterControl"
    AnimInjection AnimationAttachmentInfo "{5E38B925DD08A374}" {
     AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
     BindingName "Vehicle"
    }
-   AutoVariablesBind 1
-   ResetOnDeactivation 1
-   DeactivationDelay 2
+   AnimCommandsToBind {
+    ""
+   }
+   AnimVariablesToBind {
+    ""
+   }
   }
  }
  coords -13.792 -1.314 -7.384
