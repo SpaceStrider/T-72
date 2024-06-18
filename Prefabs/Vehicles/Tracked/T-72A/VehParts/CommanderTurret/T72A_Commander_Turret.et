@@ -37,6 +37,50 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
   SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{61747163238449A5}" {
+     AnimDoorIndex 2
+     ContextName "commander_hatch"
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{617438792CFA4F62}" {
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{617438790031AC9B}" {
+      UIInfo SCR_ActionUIInfo "{60B8C998FC0A0D46}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" -1
+     }
+     EntryPositionInfo PointInfo "{50B8D5DD213DC00C}" {
+      PivotID "v_turret_01"
+      Offset 0.56 0.73 -0.7267
+      Angles 0 180 0
+     }
+     ExitPositionInfo PointInfo "{54A2A290B157C14F}" {
+      PivotID "v_turret_01"
+      Offset 0.56 0.73 -0.7267
+      Angles 0 180 0
+     }
+     AlignDuringGetOut 1
+     GetInAligningTeleport 1
+     GetOutAligningTeleport 1
+     GetInSeatAligningOnEvent 1
+     AccessibilitySettings CompartmentAccessibilityContext "{5956EE25557ADF40}" {
+      BBHalfExtents 0.5 0.4 0.005
+      TraceOffset 0 0.5 1
+      ExcludePhysicsLayer 262144
+     }
+    }
+    CompartmentDoorReference "{61747165C7D1442B}" {
+    }
+    CompartmentDoorReference "{61747165C6675950}" {
+     AnimDoorIndex 1
+    }
+   }
    CompartmentSlots {
     TurretCompartmentSlot TurretCompartment {
      CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
