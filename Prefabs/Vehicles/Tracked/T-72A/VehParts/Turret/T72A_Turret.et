@@ -227,8 +227,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fMovementDampingSpeed 8
      m_fVignetteMoveSpeed 16
      m_fMotionBlurScale 0
-     m_fRecoilTranslationTarget 0.001
-     m_fRecoilScaleTranslation 1
     }
    }
    SignalsSourceAccess SignalsSourceAccessClass "{5E122300A616F827}" {
@@ -353,4 +351,5 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    DeactivationDelay 2
   }
  }
+ coords 1298.924 38.096 2820.764
 }
