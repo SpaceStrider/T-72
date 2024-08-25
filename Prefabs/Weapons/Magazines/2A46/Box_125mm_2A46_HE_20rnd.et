@@ -16,7 +16,7 @@ GenericEntity : "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46
   MagazineComponent "{CA6BE4D6B4DAFD69}" {
    UIInfo MagazineUIInfo "{57126733AA401586}" {
     Name "2A46 3OF26 HE"
-    m_sAmmoType "HE"
+    m_sAmmoType "3OF26 HE"
     m_eAmmoTypeFlags 40
    }
    AmmoMapping {
@@ -24,4 +24,5 @@ GenericEntity : "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46
    }
   }
  }
+ coords 1297.953 37.969 2831.325
 }

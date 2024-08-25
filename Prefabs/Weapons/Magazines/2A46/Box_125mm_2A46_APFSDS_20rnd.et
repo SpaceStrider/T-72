@@ -25,7 +25,7 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
     Name "2A46 3BM15 APFSDS"
     Description ""
     m_sAmmoCaliber "125mm"
-    m_sAmmoType "APFSDS"
+    m_sAmmoType "3BM15 APFSDS"
     m_bShowAmmoTypeText 1
     m_eAmmoTypeFlags 6
    }
@@ -50,4 +50,5 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
    AllowCrossHierarchy 1
   }
  }
+ coords 1294.234 37.969 2831.912
 }

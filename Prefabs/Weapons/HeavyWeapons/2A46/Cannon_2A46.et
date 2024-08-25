@@ -56,7 +56,12 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
-    SightsComponent "{BB23A637957CFFF8}" {
+    AttachmentSlotComponent "{621CE29CF07B113C}" {
+     AttachmentSlot InventoryStorageSlot "{621CE29CED006BC1}" {
+      PivotID "slot_optics"
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
     }
     MuzzleComponent "{5E1425A1AA3199A6}" {
      components {
@@ -193,12 +198,15 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
       }
      }
      ReloadDuration 7
+     AllowWeaponDeployment 0
      MagazinePosition InventoryStorageSlot Mag {
       Offset -0.3583 0.0384 -0.0656
+      ChildPivotID "snap_weapon"
      }
      MagazineTemplate "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46_APFSDS_20rnd.et"
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
      AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
      AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
      AlwaysActive 1
@@ -238,5 +246,5 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
    AllowCrossHierarchy 1
   }
  }
- coords 0 0 0
+ coords 1283.548 37.938 2825.677
 }

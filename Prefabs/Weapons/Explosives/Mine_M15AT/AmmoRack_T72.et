@@ -4,5 +4,9 @@ GenericEntity : "{49FFE8F373F55961}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRac
   MeshObject "{5968D9C73C08706E}" {
    Object "{E684304AEF99FB07}Assets/Vehicles/Tracked/T-72A/AmmoRack.xob"
   }
+  SCR_MineInventoryItemComponent "{59E4E694B93DC656}" {
+   Enabled 0
+  }
  }
+ coords 1296.206 37.75 2854.669
 }
