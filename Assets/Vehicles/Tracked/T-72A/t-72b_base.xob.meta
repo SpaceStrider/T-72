@@ -214,8 +214,24 @@ MetaFileClass {
      Mass 0
      Margin 0
     }
+    GeometryParam UCX_tracks_flat_left_mine {
+     LayerPreset "MineTrigger"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
     GeometryParam UCX_tracks_flat_right {
      LayerPreset "VehicleComplex"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_tracks_flat_right_mine {
+     LayerPreset "MineTrigger"
      SurfaceProperties {
       "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
      }
@@ -226,6 +242,30 @@ MetaFileClass {
      LayerPreset "FireGeo"
      SurfaceProperties {
       "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_VC_Hull {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UCX_VC_Hull.001" {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam "UCX_VC_Hull.002" {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
      }
      Mass 0
      Margin 0
@@ -463,8 +503,9 @@ MetaFileClass {
       "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
       "{B6F2475AE2D7E8FD}Common/Materials/Game/Armor/armor_80mm.gamemat"
       "{EDB153DC99889624}Common/Materials/Game/Metal/metal_3mm.gamemat"
-      "{347B4C7F53321BB3}Common/Materials/Game/Armor/armor_250mm.gamemat"
+      "{347B4C7F53321BB3}Common/Materials/Game/Armor/armor_250mm_t72.gamemat"
       "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat"
+      "{5824DB4DA1A28E22}Common/Materials/Game/Armor/armor_100mm.gamemat"
      }
      Mass 0
      Margin 0
@@ -481,46 +522,6 @@ MetaFileClass {
      LayerPreset "FireView"
      SurfaceProperties {
       "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam UCX_tracks_flat_left_mine {
-     LayerPreset "MineTrigger"
-     SurfaceProperties {
-      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam UCX_tracks_flat_right_mine {
-     LayerPreset "MineTrigger"
-     SurfaceProperties {
-      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam UCX_VC_Hull {
-     LayerPreset "Vehicle"
-     SurfaceProperties {
-      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam "UCX_VC_Hull.001" {
-     LayerPreset "Vehicle"
-     SurfaceProperties {
-      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam "UCX_VC_Hull.002" {
-     LayerPreset "Vehicle"
-     SurfaceProperties {
-      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
      }
      Mass 0
      Margin 0

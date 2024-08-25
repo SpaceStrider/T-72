@@ -15,7 +15,7 @@ MetaFileClass {
    }
    GeometryParams {
     GeometryParam UTM_AmmoRack {
-     LayerPreset "FireView"
+     LayerPreset "FireGeo"
      SurfaceProperties {
       "{5824DB4DA1A28E22}Common/Materials/Game/Armor/armor_100mm.gamemat"
      }

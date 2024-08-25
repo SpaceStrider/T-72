@@ -35,14 +35,22 @@ MetaFileClass {
     }
    }
    GeometryParams {
+    GeometryParam UCX_VC_turret {
+     LayerPreset "VehicleComplex"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
     GeometryParam UTM_FV_Smokes {
      LayerPreset "FireView"
      SurfaceProperties {
       "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
-      "{A2A2935A5925F35F}Common/Materials/Game/Armor/armor_170mm.gamemat"
-      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm.gamemat"
-      "{347B4C7F53321BB2}Common/Materials/Game/Armor/armor_400mm.gamemat"
-      "{C839414719E2D518}Common/Materials/Game/Armor/armor_500mm.gamemat"
+      "{A2A2935A5925F35F}Common/Materials/Game/Armor/armor_170mm_t72.gamemat"
+      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm_t72.gamemat"
+      "{347B4C7F53321BB2}Common/Materials/Game/Armor/armor_400mm_t72.gamemat"
+      "{C839414719E2D518}Common/Materials/Game/Armor/armor_500mm_t72.gamemat"
      }
      Mass 0
      Margin 0
@@ -51,10 +59,10 @@ MetaFileClass {
      LayerPreset "FireView"
      SurfaceProperties {
       "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
-      "{A2A2935A5925F35F}Common/Materials/Game/Armor/armor_170mm.gamemat"
-      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm.gamemat"
-      "{347B4C7F53321BB2}Common/Materials/Game/Armor/armor_400mm.gamemat"
-      "{C839414719E2D518}Common/Materials/Game/Armor/armor_500mm.gamemat"
+      "{A2A2935A5925F35F}Common/Materials/Game/Armor/armor_170mm_t72.gamemat"
+      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm_t72.gamemat"
+      "{347B4C7F53321BB2}Common/Materials/Game/Armor/armor_400mm_t72.gamemat"
+      "{C839414719E2D518}Common/Materials/Game/Armor/armor_500mm_t72.gamemat"
      }
      Mass 0
      Margin 0
@@ -63,14 +71,6 @@ MetaFileClass {
      LayerPreset "FireView"
      SurfaceProperties {
       "{5EE22D6E62DCE04A}Common/Materials/Game/Fabric/fabric_6mm_min.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam UCX_VC_turret {
-     LayerPreset "VehicleComplex"
-     SurfaceProperties {
-      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
      }
      Mass 0
      Margin 0

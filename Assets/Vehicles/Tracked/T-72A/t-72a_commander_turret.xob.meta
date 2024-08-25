@@ -25,7 +25,7 @@ MetaFileClass {
     GeometryParam UTM_turret_machinegun_turret {
      LayerPreset "FireView"
      SurfaceProperties {
-      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm.gamemat"
+      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm_t72.gamemat"
      }
      Mass 0
      Margin 0

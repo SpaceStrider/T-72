@@ -16,7 +16,7 @@ MetaFileClass {
     GeometryParam UTM_Kontakt {
      LayerPreset "FireView"
      SurfaceProperties {
-      "{A50ED6B9BB7AC977}Common/Materials/Game/Armor/armor_70mm_ERA.gamemat"
+      "{9C470D1E1722A0AB}Common/Materials/Game/Armor/armor_70mm_t72.gamemat"
      }
      Mass 0
      Margin 0
@@ -40,6 +40,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{5E6260D49FEF0719}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass PS5 : PC {
   }
  }
 }
