@@ -11,7 +11,11 @@ Tank : "{BC07885176C7FF8A}Prefabs/Vehicles/Tracked/T-72A/T72A_base.et" {
   }
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{081CD588901E8C02}UI/Textures/EditorPreviews/Vehicles/Tracked/T72A/T72A_FIA.edds"
     m_sFaction "FIA"
+    m_aAutoLabels {
+     12 122 54
+    }
    }
   }
   SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {

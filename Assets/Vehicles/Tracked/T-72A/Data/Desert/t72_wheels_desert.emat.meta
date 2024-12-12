@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E88F7776F8B170B0}Assets/Vehicles/Tracked/T-72A/Data/t72_wheels_desert.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+ }
+}

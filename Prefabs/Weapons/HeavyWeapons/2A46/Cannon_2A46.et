@@ -242,6 +242,16 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
      Position PointInfo "{5E1425A1AA304FCE}" {
      }
     }
+    UserActionContext "{62E301981C2EFDF4}" {
+     ContextName "rearm_weapon"
+     Position PointInfo "{62E301981B401A25}" {
+      Offset 0 0.0167 3.0932
+     }
+    }
+   }
+   additionalActions {
+    WCS_RearmWeaponAtRepairStationAction "{62E30199F36ADF5E}" : "{A7948E584E8280A6}Prefabs/Weapons/Core/Configs/WCS_RearmWeaponAtRepairStationAction.conf" {
+    }
    }
    AllowCrossHierarchy 1
   }

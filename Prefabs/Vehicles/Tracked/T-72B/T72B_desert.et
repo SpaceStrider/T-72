@@ -1,0 +1,29 @@
+Tank : "{726286E1F9570EA1}Prefabs/Vehicles/Tracked/T-72B/T72B_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{6315720D748E4AE3}" {
+     SourceMaterial "t72_wheels"
+     AssignedMaterial "{E88F7776F8B170B0}Assets/Vehicles/Tracked/T-72A/Data/Desert/t72_wheels_desert.emat"
+    }
+    MaterialAssignClass "{6315720D748E4AF4}" {
+     SourceMaterial "t72a_hull"
+     AssignedMaterial "{88E464B93EFC2414}Assets/Vehicles/Tracked/T-72A/Data/Desert/t72a_hull_desert.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{E40CEEE035F97F2F}UI/Textures/EditorPreviews/Vehicles/Tracked/T-72B/T72B_Desert.edds"
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{738AD329DA2F724A}Prefabs/Vehicles/Tracked/T-72B/VehParts/Turret/T72B_Turret_Desert.et"
+    }
+   }
+  }
+ }
+}

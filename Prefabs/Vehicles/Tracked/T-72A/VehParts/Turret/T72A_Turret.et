@@ -18,8 +18,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     "{2964C2E313D7FC9C}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Turret_LP.acp" "{4AF770EF76013B62}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Turret.acp"
    }
   }
-  BaconTankStuff_TurretStabilizationComponent "{5E38A5BB03A27A90}" {
-  }
   MeshObject "{51ACD09C4E0B7D16}" {
    Object "{4E627F95B24AF26C}Assets/Vehicles/Tracked/T-72A/t-72a_turret.xob"
    PixelSizeScale 10
@@ -75,6 +73,8 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       Offset -0.5 0.73 -0.7267
       Angles 0 180 0
      }
+     GetInTeleport 1
+     GetOutTeleport 1
      AlignDuringGetOut 1
      GetInAligningTeleport 1
      GetOutAligningTeleport 1
@@ -92,6 +92,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       ParentContextList {
        "gunnerHatch"
       }
+      Duration 1
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
       ParentContextList {
@@ -243,6 +244,11 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    BaseSpeed 20
    BaseAcceleration 20
    BaseDeceleration 40
+  }
+  WCS_Armament_TurretStabilizationComponent "{62E3019964B99370}" {
+   m_fHorizontalStabilizationSpeed 50
+   m_fVerticalStabilizationSpeed 20
+   m_bStabilizationEnabled 1
   }
   SlotManagerComponent "{5E2AA018E907CBAA}" {
    Slots {

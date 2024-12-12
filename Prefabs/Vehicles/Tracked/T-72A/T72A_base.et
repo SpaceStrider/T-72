@@ -105,36 +105,47 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   BaseVehicleNodeComponent "{20FB66C5B2237133}" {
    components {
     SCR_CarControllerComponent "{20FB66C5BC92275B}" {
-     MaxStartupTime 2.4
-     MaxWantsToStartTime 2
+     MaxStartupTime 1.2
      AirIntakes {
+      PointInfo "{62F95364F5CB3B5F}" {
+       Offset -0.0393 1.4437 -3.074
+      }
       PointInfo "{6050445E73FCDDCC}" {
        Offset 0 1.3427 -3.0151
       }
      }
      MaxLightsTime 2
+     TransmissionRND 0
      ThrottleCurve {
-      2800 0.8 3500 0.5 5000 0
+      2080 0.8 2600 0.5 4000 0
      }
      ReverseCurve {
-      1500 0.8 1800 0.5 2300 0
+      1000 0.8 1250 0.5 1500 0
      }
      BrakingCurve {
       0 0 0.3 0.4 0.7 0.4 1 0.7 1.7 0.7 2 1
      }
-     ClutchUncoupleTime 0.4
-     ClutchCoupleTime 0.2
-     ClutchUncoupleRpm 1200
-     ClutchCoupleRpm 1900
+     ClutchUncoupleTime 0.5
+     ClutchCoupleTime 0.25
+     ClutchUncoupleRpm 1250
+     ClutchCoupleRpm 1510
      Latency 1
-     UpShiftRpm 1900
-     DownShiftFactor 0.65
-     DownShiftRpm 1700
+     UpShiftRpm 1380
+     DownShiftRpm 1250
     }
     SCR_BaseHUDComponent "{37C2676694790BC7}" {
      InfoDisplays {
       SCR_InfoDisplay "{50E6E6F81354B90F}" {
        InfoDisplays {
+        SCR_AnalogGauge "{50E6E9C42E916085}" {
+         InfoDisplays {
+          SCR_GearShiftInfo "{5A76D388D738902B}" {
+          }
+         }
+         m_sInfoText "#AR-VehicleInfo_RPMx100"
+         m_fLabelValueMultiplier 0.01
+         m_fValueMax 4000
+        }
         SCR_AnalogGaugeMultiSignal "{50E6F12BB4D36587}" {
          m_fValueMax 1200
          m_fSectionEveryNthValue 600
@@ -154,7 +165,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   RigidBody "{51DAA09FECF52BBF}" {
    Mass 30500
-   CenterOfMass 0 1 -0.2
+   CenterOfMass 0 1.2 -0.2
    LinearSleepingThreashold 0.4
    AngularSleepingThreashold 0.5
   }
@@ -183,6 +194,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset 0 0 3
       Angles 0 180 0
      }
+     GetInTeleport 1
+     GetOutTeleport 1
      AlignDuringGetOut 1
      GetInAligningTeleport 1
      GetOutAligningTeleport 1
@@ -196,10 +209,12 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    CompartmentSlots {
     PilotCompartmentSlot PilotCompartment {
+     CompartmentUniqueName "driver"
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
       ParentContextList {
        "driver_hatch"
       }
+      Duration 1
      }
      GetOutAction SCR_GetOutAction "{509D56667AFC4BD5}" {
       VisibilityRange 5
@@ -246,13 +261,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     Name "#SPC-Vehicle_T72A_Name"
     Icon "{95F49CBE9FF7A0CB}UI/Textures/Editor/EditableEntities/Vehicles/EditableEntity_Vehicle_Apc.edds"
-    m_Image "{477709DE614653BD}UI/Textures/EditorPreviews/Vehicles/Tracked/T72A/Screenshot 2023-08-10 221002.edds"
+    m_Image "{BE11273436506F42}UI/Textures/EditorPreviews/Vehicles/Tracked/T72A/T72A.edds"
     m_sFaction "USSR"
     m_aAuthoredLabels + {
      20 21 1001
     }
     m_aAutoLabels {
-     10 122 53
+     10 122 54
     }
     m_EntityBudgetCost {
      SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
@@ -372,10 +387,11 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    m_fMaxWeight 300
   }
   SCR_VehicleCameraDataComponent "{216DA82C75CDD94B}" {
-   m_fHeight 1.5
-   m_fDist_Max 8
-   m_fDist_Min 5
-   m_fDist_Desired 7
+   m_fHeight 0.5
+   m_fDist_Max 6
+   m_fDist_Min 4
+   m_fDist_Desired 5
+   m_fAngleFirstPerson 12
   }
   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
    m_aWheels {
@@ -467,16 +483,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    Simulation Wheeled "{5E38B925DD330407}" {
     Engine Engine Engine {
-     Inertia 40
+     Inertia 4
      MaxPower 580
      MaxTorque 3089
-     RpmMaxPower 3300
-     RpmMaxTorque 2200
+     RpmMaxPower 2100
+     RpmMaxTorque 1250
      Steepness 75
      Friction 265
      RpmIdle 600
-     RpmRedline 3650
-     RpmMax 5000
+     RpmRedline 2600
+     RpmMax 4000
      Output "Clutch"
     }
     Clutch Clutch Clutch {
@@ -485,7 +501,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     Gearbox Gearbox Gearbox {
      Forward {
-      7 6 3.5 2.5 1.5
+      8.9 4.76 3.3 2.5 1.8 1.36 1
      }
      Reverse 7
      Efficiency 1
@@ -493,49 +509,49 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     Differentials {
      Differential Diff_A {
-      Type Locked
-      Ratio 6.8
+      Type LSD
+      Ratio 14
       Strength 1
       Output0 "Diff_B"
       Output1 "Diff_C"
      }
      Differential Diff_B {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_01_03"
       Output1 "Diff_02_04"
      }
      Differential Diff_C {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_05_07"
       Output1 "Diff_06_08"
      }
      Differential Diff_01_03 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_01"
       Output1 "Diff_03"
      }
      Differential Diff_02_04 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_02"
       Output1 "Diff_04"
      }
      Differential Diff_05_07 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_05"
       Output1 "Diff_07"
      }
      Differential Diff_06_08 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_06"
@@ -544,10 +560,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     Axles {
      Axle "{5E38B925DD330412}" {
+      TorqueShare 0.17
       HasHandbrake 1
       Differential Differential Diff_01 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L01"
        Output1 "Wheel_R01"
@@ -557,7 +573,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75C05DD829}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
       }
-      Tyre Tyre "{5DF455FAD1D87891}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5DF455FAD1D87891}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L01 {
@@ -569,11 +585,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B925DD33042D}" {
-      TorqueShare 0.5
+      TorqueShare 0.17
       HasHandbrake 1
       Differential Differential Diff_02 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L02"
        Output1 "Wheel_R02"
@@ -583,7 +598,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75C3728451}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75CCA2638C}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5CB63E75CCA2638C}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L02 {
@@ -595,10 +610,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B925DD33042E}" {
-      TorqueShare 0.5
+      TorqueShare 0.17
+      HasHandbrake 1
       Differential Differential Diff_03 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L03"
        Output1 "Wheel_R03"
@@ -608,7 +623,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Wheel Wheel "{5CB63E75CEABD61F}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
        BrakeTorque 0
       }
-      Tyre Tyre "{5CB63E75C97DC023}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5CB63E75C97DC023}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L03 {
@@ -620,10 +635,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B925DD330421}" {
-      TorqueShare 0.5
+      TorqueShare 0.17
+      HasHandbrake 1
       Differential Differential Diff_04 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L04"
        Output1 "Wheel_R04"
@@ -633,7 +648,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Wheel Wheel "{5CB63E75CB21F1B9}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
        BrakeTorque 0
       }
-      Tyre Tyre "{5CB63E75CBE6B18C}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5CB63E75CBE6B18C}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L04 {
@@ -645,10 +660,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B925DD330423}" {
-      TorqueShare 0.5
+      TorqueShare 0.17
+      HasHandbrake 1
       Differential Differential Diff_05 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L05"
        Output1 "Wheel_R05"
@@ -658,7 +673,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Wheel Wheel "{5CB63E75D5F89198}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
        BrakeTorque 0
       }
-      Tyre Tyre "{5CB63E75D69ADDFC}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5CB63E75D69ADDFC}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L05 {
@@ -670,10 +685,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B925DD330422}" {
-      TorqueShare 0.5
+      TorqueShare 0.17
+      HasHandbrake 1
       Differential Differential Diff_06 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L06"
        Output1 "Wheel_R06"
@@ -683,7 +698,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Wheel Wheel "{5CB63E75D071A4F0}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
        BrakeTorque 0
       }
-      Tyre Tyre "{5CB63E75D12E4D3B}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5CB63E75D12E4D3B}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L06 {
@@ -695,11 +710,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B925DD330425}" {
-      TorqueShare 0.5
+      TorqueShare 0.17
       HasHandbrake 1
       Differential Differential Diff_07 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L07"
        Output1 "Wheel_R07"
@@ -709,7 +723,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75D2E13AEA}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75D3856777}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5CB63E75D3856777}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L07 {
@@ -721,10 +735,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B925DD330424}" {
+      TorqueShare 0.17
       HasHandbrake 1
       Differential Differential Diff_08 {
-       Type LSD
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L08"
        Output1 "Wheel_R08"
@@ -734,7 +748,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75DCEE0AF8}" : "{01A271682FE559F5}Prefabs/Vehicles/Tracked/T-72A/Configs/T72AWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75DD9EE3FC}" : "{2D3641D328F42A7C}Prefabs/Vehicles/Tracked/T-72A/Configs/T72ATyre.conf" {
+      Tyre Tyre "{5CB63E75DD9EE3FC}" : "{400ED763733315CA}Prefabs/Vehicles/Tracked/T-72A/Configs/VehicleSimulationTire_T72.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L08 {
@@ -748,7 +762,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     InertiaOverride 140000 160000 60000
     Aerodynamics Aerodynamics "{5E38B925DD330426}" {
-     ReferenceArea 6
+     ReferenceArea 8
     }
     Pacejka Pacejka "{5CEA0545F9051D49}" : "{2E1044D5BFA6FB16}Prefabs/Vehicles/Core/Configs/PacejkaTire_Truck_Offroad.conf" {
     }
@@ -916,6 +930,24 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
    }
   }
+  WCS_Armament_ContinuousSmokeDispenser "{63185DEFEFD5EB31}" {
+   m_aActionEnabledCompartments {
+    "driver"
+   }
+   m_Particle "{FB3B77871EA332FF}Particles/Vehicles/Smoke_Vehicle_ESS.ptc"
+   m_vParticlePosition -1.854 1.166 -2.173
+  }
+  WCS_Armament_VehicleCameraComponent "{631842D1747055FF}" {
+   m_Cameras {
+    WCS_VehicleCameraProps "{631842D170C27701}" {
+     m_Position PointInfo "{631842D17DCA8B99}" {
+      Offset 0 1.3662 1.4982
+     }
+     m_OverlayLayout "{A9758BBE1909FEFD}UI/layouts/Editor/Overlays/Vignettes/Vignette_VeryHeavy.layout"
+     m_sId "camera_1"
+    }
+   }
+  }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     RegisteringComponentSlotInfo Turret {
@@ -1006,6 +1038,15 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      }
      Height 0
     }
+    UserActionContext "{631853500E672447}" {
+     ContextName "driver_sight"
+     Position PointInfo "{631853507707291D}" {
+      Offset -0.0215 1.2444 1.3714
+      Angles -20 -180 0
+     }
+     Omnidirectional 0
+     VisibilityAngle 45
+    }
    }
    additionalActions {
     SCR_PushVehicleAction "{60DA85DB5FFC6E4F}" {
@@ -1016,6 +1057,18 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     SCR_EngineAction "{5E067791F383D2CC}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {
     }
     SCR_EngineAction "{5E067791F2FBD8E6}" : "{B67160046438840C}Prefabs/Vehicles/Core/Configs/Actions/EngineOffAction.conf" {
+    }
+    WCS_Armament_VehicleCameraAction "{631853506B6F80BD}" {
+     ParentContextList {
+      "driver_sight"
+     }
+     m_sActionStateOn ""
+     m_sActionStateOff ""
+     m_bInteriorOnly 1
+     m_aDefinedCompartmentSectionsOnly {
+      0
+     }
+     m_sCameraId "camera_1"
     }
    }
    AllowCrossHierarchy 1

@@ -10,15 +10,6 @@ $grp Turret : "{101E2C485DFE3E79}Prefabs/Vehicles/Tracked/T-72A/VehParts/Turret/
 GenericEntity : "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46_APFSDS_20rnd.et" {
  coords 1049.991 38.01 2795.535
 }
-GenericEntity : "{24D162E92F59094F}Prefabs/Weapons/RocketPods/VehicleLauncher_AGM114_R.et" {
- components {
-  BGONE_GuidedMissileLauncherComponent "{6092415D5269299F}" {
-   m_eLockTypeComponent BGONE_LockType_VIS "{61023A65E08FF2AD}" {
-   }
-  }
- }
- coords 1721.61 40.284 2855.161
-}
 $grp GenericEntity : "{279EDF225600C324}Prefabs/Weapons/HeavyWeapons/2A46/Cannon_2A46.et" {
  {
   coords 1045.521 38.01 2797.5
@@ -28,17 +19,14 @@ $grp GenericEntity : "{279EDF225600C324}Prefabs/Weapons/HeavyWeapons/2A46/Cannon
   angleY 75.494
  }
 }
-Projectile : "{31D32929F2C68D43}Prefabs/Weapons/Ammo/Ammo_Missile_AGM114.et" {
- coords 1721.623 39 2857.112
-}
 TracerProjectile : "{39E8316BCCE5133A}Prefabs/Weapons/Ammo/Ammo_127x99_APIT_M20.et" {
  coords 1051.12 38.01 2796.439
 }
+Vehicle Ural1 : "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et" {
+ coords 1065.385 38 2796.254
+}
 Projectile : "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" {
  coords 1049.983 38.01 2796.984
-}
-GenericEntity : "{5F7AE6931FD9801F}Prefabs/Weapons/Launchers/BGONE_Launcher_SACLOS.et" {
- coords 2507.531 147.609 2284.346
 }
 $grp Turret : "{66596659FB0F645B}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Turret/BTR70_Turret.et" {
  {
@@ -60,21 +48,9 @@ Tank T72B_base1 : "{726286E1F9570EA1}Prefabs/Vehicles/Tracked/T-72B/T72B_base.et
  coords 1747.663 39.01 2863.921
  angleY -105.128
 }
-Projectile : "{7D052F3F19E14818}Prefabs/Weapons/Ammo/Ammo_Missile_BGM71_TOW.et" {
- coords 1720.534 39 2857.08
-}
-Turret : "{8162828B60844567}Prefabs/Vehicles/Helicopters/AH1/VehParts/Turret/AH1W_Turret.et" {
- coords 1718.64 39 2844.356
-}
 Turret : "{8FF753EA3E0E76AB}Prefabs/Vehicles/Tracked/T-72B/VehParts/Turret/T72B_Turret.et" {
  coords 1746.633 39.01 2867.446
  angleY -105.763
-}
-GenericEntity : "{A05613F5CDB2E3CD}Prefabs/Weapons/Launchers/BGONE_Launcher_VIS.et" {
- coords 2509.071 147.64 2285.308
-}
-Projectile : "{B9F8BCBAAD0849AC}Prefabs/Weapons/Ammo/Ammo_Missile_9M120.et" {
- coords 1722.517 39 2857.5
 }
 $grp Tank : "{BC07885176C7FF8A}Prefabs/Vehicles/Tracked/T-72A/T72A_base.et" {
  T72A_base1 {
@@ -92,30 +68,6 @@ $grp Tank : "{BC07885176C7FF8A}Prefabs/Vehicles/Tracked/T-72A/T72A_base.et" {
 Projectile : "{D85D67076B82AF2A}Prefabs/Weapons/Ammo/Ammo_100mm_ATGM_9M117.et" {
  coords 1719.225 39 2856.89
 }
-Vehicle AH1W_base1 : "{F18F9FC531EBE62D}Prefabs/Vehicles/Helicopters/AH1/AH1W_base.et" {
- components {
-  RigidBody "{51DAA09FECF52BBF}" {
-   Static 1
-  }
- }
- coords 1739.447 217.785 2834.369
- angleY 152.362
-}
-GenericEntity : "{F39BAA571FBB4A99}Prefabs/Weapons/RocketPods/VehicleLauncher_Igla.et" {
- coords 1711.628 39 2852.679
-}
-Vehicle MI28_base1 : "{FC30545B07C3478B}Prefabs/Vehicles/Helicopters/MI28/MI28_base.et" {
- components {
-  RigidBody "{51DAA09FECF52BBF}" {
-   Static 1
-  }
- }
- coords 1753.205 217.785 2841.573
- angleY 152.362
-}
 GenericEntity : "{FE37DBE1A4CE9C4B}Prefabs/Weapons/RocketPods/VehicleLauncher_BGM71.et" {
  coords 1715.432 39 2852.145
-}
-GenericEntity : "{FFEC7CBBDA59E0C3}Prefabs/Weapons/RocketPods/VehicleLauncher_9M120.et" {
- coords 1718.756 39 2853.185
 }

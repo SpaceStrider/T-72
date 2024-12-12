@@ -7,6 +7,12 @@ GenericEntity : "{49FFE8F373F55961}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRac
   SCR_MineInventoryItemComponent "{59E4E694B93DC656}" {
    Enabled 0
   }
+  SCR_PlaceableItemComponent "{5A127CDA1D1B58E6}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{59E4E6938E65C2ED}" {
+   Enabled 0
+  }
  }
  coords 1296.206 37.75 2854.669
 }

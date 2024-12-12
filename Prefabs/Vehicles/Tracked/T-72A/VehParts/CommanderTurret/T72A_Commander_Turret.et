@@ -65,6 +65,8 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       Offset 0.56 0.73 -0.7267
       Angles 0 180 0
      }
+     GetInTeleport 1
+     GetOutTeleport 1
      AlignDuringGetOut 1
      GetInAligningTeleport 1
      GetOutAligningTeleport 1
@@ -90,6 +92,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       UIInfo SCR_ActionUIInfo "{5086CC2CF6E6E730}" {
        m_sIconName "veh_commander"
       }
+      Duration 1
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
       ParentContextList {
@@ -218,9 +221,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fMovementDampingSpeed 8
      m_fVignetteMoveSpeed 16
      m_fMotionBlurScale 0
-     m_fRecoilScaleMax 1
-     m_fRecoilTranslationTarget 0.001
-     m_fRecoilScaleTranslation 1
     }
    }
    SignalsSourceAccess SignalsSourceAccessClass "{5E2AA01A5666DF42}" {

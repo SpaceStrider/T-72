@@ -28,6 +28,17 @@ GenericEntity : "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46
  coords 17.002 1 205.071
 }
 GenericEntity : "{279EDF225600C324}Prefabs/Weapons/HeavyWeapons/2A46/Cannon_2A46.et" {
+ components {
+  ActionsManagerComponent "{A29AE67FF4D82B0F}" {
+   ActionContexts {
+    UserActionContext "{62E301981C2EFDF4}" {
+     Position PointInfo "{62E301981B401A25}" {
+      Offset 0 0.0167 3.0932
+     }
+    }
+   }
+  }
+ }
  coords 21.446 1 217.316
 }
 Projectile : "{32E12D322E107F1C}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM.et" {
@@ -37,7 +48,7 @@ GenericEntity : "{3CD97928819E3999}Prefabs/Vehicles/Core/ERA/Kontakt_Base.et" {
  coords 23.93 1 217.497
 }
 Vehicle Ural1 : "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et" {
- coords 13.843 1 157.612
+ coords 23.225 1 184.571
 }
 GenericEntity : "{48535A0289F8AC7C}Prefabs/Vehicles/Tracked/T-72B/VehParts/ERA/Hull/T72B_Kontakt_Hull_05.et" {
  coords 26.464 1 216.067
@@ -47,6 +58,9 @@ GenericEntity : "{49FFE8F373F55961}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRac
 }
 Vehicle S1203_base1 : "{4AE9D080927D3CB9}Prefabs/Vehicles/Wheeled/S1203/S1203_base.et" {
  coords 47.901 1 137.216
+}
+Vehicle BTR70_SmokeLauncherExample1 : "{4B9050627EBE3CFC}Prefabs/Vehicles/Wheeled/BTR70/BTR70_SmokeLauncherExample.et" {
+ coords 25.568 1 200.612
 }
 GenericEntity : "{4E27A2464DC43997}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRack_T72.et" {
  coords 9.658 1 209.026
@@ -100,21 +114,13 @@ $grp GenericEntity : "{986BBDD66E50B41F}Prefabs/Props/Core/Triplex_Placeholder.e
   coords 21.177 1 193.725
  }
 }
-Vehicle M923A1 : "{9A0D72816DFFDB7F}Prefabs/Vehicles/Wheeled/M923A1/M923A1.et" {
- components {
-  VehicleWheeledSimulation_SA "{731B26FCA2F19855}" {
-   Simulation Wheeled "{4D8B26DEA5F25978}" {
-    Axles {
-     Axle "{4D8B26DF957A8E1C}" {
-      Suspension Suspension "{4D8B26DFF8859A7B}" {
-       SpringRate 50
-      }
-     }
-    }
-   }
-  }
+$grp Vehicle : "{9A0D72816DFFDB7F}Prefabs/Vehicles/Wheeled/M923A1/M923A1.et" {
+ M923A1 {
+  coords 54.107 1 124.432
  }
- coords 54.107 1 124.432
+ M923A2 {
+  coords 28.639 1 184.991
+ }
 }
 $grp GenericEntity : "{9CEA10E8ABCFA5C3}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Magazines/VehPart_Magazine_KVPT.et" {
  {
@@ -159,14 +165,6 @@ $grp Vehicle : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
 }
 Turret : "{C9D9D552BD146491}Prefabs/Vehicles/Tracked/T-72A/VehParts/CommanderTurret/T72A_Commander_Turret.et" {
  coords 18.975 1 218.299
-}
-$grp GenericEntity : "{CC36340F826CAB2C}Prefabs/Weapons/HeavyWeapons/NSV/HMG_NSVT.et" {
- {
-  coords 18.779 2.054 216.112
- }
- {
-  coords 22.672 1 218.139
- }
 }
 GenericEntity : "{D649A52C2A1A29FF}Prefabs/Weapons/Warheads/Warhead_HEAT_PG7VM.et" {
  coords 21.483 1.9 205.65
