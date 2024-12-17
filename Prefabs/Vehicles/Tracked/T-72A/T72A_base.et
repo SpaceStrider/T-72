@@ -395,7 +395,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
    m_aWheels {
-    2 3 4 5 10 11 12 13
+    2 3 4 5 10 11
    }
   }
   SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
@@ -953,6 +953,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     RegisteringComponentSlotInfo Turret {
      MergePhysics 1
      Prefab "{101E2C485DFE3E79}Prefabs/Vehicles/Tracked/T-72A/VehParts/Turret/T72A_Turret.et"
+     DisablePhysicsInteraction 1
      RegisterActions 1
      RegisterDamage 1
      RegisterControllers 1
@@ -963,21 +964,11 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      Angles 90 0 0
      Prefab "{FAB2DC66A07B9432}Prefabs/Vehicles/Wheeled/BTR70/VehParts/BTR70_shadow.et"
     }
-    EntitySlotInfo AmmoRack {
-     Prefab "{4E27A2464DC43997}Prefabs/Weapons/Explosives/Mine_M15AT/AmmoRack_T72.et"
-    }
-    RAM_TriplexEntitySlotInfo Driver_Main {
-     Offset -0.02 1.2674 1.403
+    RegisteringComponentSlotInfo AmmoRack {
      MergePhysics 1
-     Prefab "{986BBDD66E50B41F}Prefabs/Props/Core/Triplex_Placeholder.et"
-     RegisterActions 1
-     m_CameraPointInfo RAM_CustomCameraPointInfo "{610E489C3D1CDC86}" {
-      Offset -0.02 1.3322 1.421
-      m_fCameraFoV 90
-      m_fRotationAngle 10
-      m_rCameraOverlayLayout "{C29A5AAEE13B3DE9}UI/layouts/Sights/RAM_Optic_Triplex.layout"
-      m_bInstantMoveCamera 1
-     }
+     Prefab "{6F9B571EA4B5D1C5}Prefabs/Vehicles/Tracked/T-72A/VehParts/Magazines/VehPart_Magazine_T72_base.et"
+     DisablePhysicsInteraction 1
+     RegisterDamage 1
     }
    }
   }

@@ -206,15 +206,9 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
      MagazineTemplate "{2103601E9C5BDD5B}Prefabs/Weapons/Magazines/2A46/Box_125mm_2A46_APFSDS_20rnd.et"
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
-     Enabled 0
      AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
      AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
      AlwaysActive 1
-     AnimInjection AnimationAttachmentInfo "{6174387BAA3BD340}" {
-      AnimGraph "{6791BE2144ADC6A3}Assets/Weapons/HeavyWeapons/workspaces/M2HB_m998.agr"
-      AnimInstance "{90F5E30119FE8312}Assets/Weapons/HeavyWeapons/workspaces/M2HB_Player_tripod.asi"
-      BindingName "Weapon"
-     }
      BindWithInjection 1
      AnimCommandsToBind {
       "" "" ""
@@ -254,6 +248,9 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
     }
    }
    AllowCrossHierarchy 1
+  }
+  RplComponent "{E052E71DCB007AF2}" {
+   "Parent Node From Parent Entity" 1
   }
  }
  coords 1283.548 37.938 2825.677

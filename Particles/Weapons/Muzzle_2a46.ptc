@@ -1,5 +1,5 @@
 EffectDef {
- Version 1
+ Version 2
  Emitters {
   EmitterDef glowcore {
    ShapeType Sphere
@@ -98,7 +98,7 @@ EffectDef {
    RandomRotDir 0
    BillboardingType Full
    RandomAngle 1
-   RandomUFlip 1
+   FlipU Random
    Velocity 0
    VelocityRND 1
    AirResistance 4.311
@@ -611,7 +611,7 @@ EffectDef {
    AngularFadeOutStart 0.4
    VelAngle 0
    RandomAngle 0
-   RandomUFlip 1
+   FlipU Random
    Velocity 3
    VelocityRND 3
    VelAffect 0

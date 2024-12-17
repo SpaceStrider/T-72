@@ -1,5 +1,5 @@
 EffectDef {
- Version 1
+ Version 2
  Emitters {
   EmitterDef smoke_small_fast {
    ConeAngle 360 0 0
@@ -19,7 +19,7 @@ EffectDef {
    RotMultiplier 50
    RandomRotDir 1
    RandomAngle 1
-   RandomUFlip 1
+   FlipU Random
    Velocity 0
    VelocityRND 1
    VelAffect 0.35
@@ -263,7 +263,7 @@ EffectDef {
    RotMultiplier 0
    RandomRotDir 1
    VelAngle 0
-   RandomUFlip 1
+   FlipU Random
    Velocity 60
    VelocityRND 1
    VelAffect 1
@@ -320,7 +320,7 @@ EffectDef {
    RotMultiplier 0
    RandomRotDir 1
    VelAngle 0
-   RandomUFlip 1
+   FlipU Random
    Velocity 25
    VelocityRND 5
    VelAffect 1

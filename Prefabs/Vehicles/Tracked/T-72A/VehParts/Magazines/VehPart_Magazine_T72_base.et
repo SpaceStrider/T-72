@@ -1,0 +1,19 @@
+GenericEntity : "{0A5B7E926D932007}Prefabs/Vehicles/Core/Vehicle_Ammunition_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{E684304AEF99FB07}Assets/Vehicles/Tracked/T-72A/AmmoRack.xob"
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_VehicleHitZone Ammunition {
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{5EC4D19A7F8DA0BA}" {
+       m_fMultiplier 5
+      }
+     }
+    }
+   }
+  }
+ }
+}
